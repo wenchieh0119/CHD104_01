@@ -79,8 +79,8 @@ button {
 
 .banner .title {
   position: relative;
-
-  padding: 0;
+  top: 0;
+  bottom: 0;
 
   display: flex;
   width: 100%;
@@ -212,7 +212,7 @@ button {
 .hotview_park .hover {
   margin: 40px 0;
   display: none;
-  border: #2b3e79 1px solid;
+
   width: 350px;
   height: 50px;
   font-size: 16px;
@@ -221,7 +221,7 @@ button {
   letter-spacing: 1px;
   line-height: 1.5;
   color: #000000;
-  background-color: #2b3f792e;
+  background-color: #ffbe00;
 }
 
 .btn button {
