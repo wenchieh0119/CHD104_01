@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: noto sanstc;
+  font-family: "noto sanstc";
 
   letter-spacing: 1px;
 }
@@ -101,9 +101,10 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 20px;
   color: white;
   letter-spacing: 10px;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
 }
 
 .banner h1 {
@@ -127,6 +128,7 @@ button {
   align-items: center;
   padding: 20px 0;
   margin: 0;
+  margin-bottom: 50px;
 }
 
 .top_btn ul li {
@@ -182,6 +184,7 @@ button {
   font-size: 32px;
   letter-spacing: 2px;
   text-align: center;
+  font-family: "noto sanstc";
 }
 
 .hotview_wrap .card {
@@ -194,7 +197,6 @@ button {
   align-items: center;
   align-content: space-around;
   padding: 20px 10px;
-  background-color: #ffdf7f;
 }
 
 .hotview_wrap .card .item {
@@ -223,6 +225,8 @@ button {
   text-align: center;
   letter-spacing: 4px;
   color: white;
+  font-family: "noto sanstc";
+  font-weight: 600;
 }
 
 .hotview_wrap .card .item .word p {
@@ -240,7 +244,9 @@ button {
   font-size: 20px;
   background: transparent;
   border: 2px solid #ffbe00;
-  font-family: roboto;
+  font-family: "Saira Extra Condensed", sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 500;
   text-align: center;
   display: inline-block;
   color: black;
@@ -276,6 +282,7 @@ button {
   font-size: 32px;
   letter-spacing: 2px;
   text-align: center;
+  font-family: "noto sanstc";
 }
 
 .view_wrap .card {
@@ -288,7 +295,6 @@ button {
   align-items: center;
   align-content: space-around;
   padding: 20px 10px;
-  background-color: #2b3f79e1;
 }
 
 .view_wrap .card .item {
@@ -317,6 +323,8 @@ button {
   text-align: center;
   letter-spacing: 4px;
   color: white;
+  font-family: "noto sanstc";
+  font-weight: 600;
 }
 
 .view_wrap .card .item .word p {
@@ -334,7 +342,9 @@ button {
   font-size: 20px;
   background: transparent;
   border: 2px solid #2b3e79;
-  font-family: roboto;
+  font-family: "Saira Extra Condensed", sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 500;
   text-align: center;
   display: inline-block;
   color: rgb(0, 0, 0);

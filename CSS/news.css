@@ -93,7 +93,7 @@ button {
 
 .banner .title h1 {
   position: absolute;
-  font-size: 40px;
+  font-size: 48px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -101,32 +101,33 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-family: "noto sanstc";
+  text-shadow: 1px 1px #9f9f9f, 2px 2px #838383, 3px 3px #898989,
+    4px 4px #747474;
   color: rgb(0, 0, 0);
   letter-spacing: 10px;
 }
-
 .wrap .title {
+  width: 280px;
+  height: 64px;
   background-color: #2b3e79;
-  height: 78px;
-  font-size: 52px;
-  color: black;
-  letter-spacing: 23;
-  text-align: center;
-  line-height: 78px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: 50px;
 }
 
 .wrap .title h3 {
-  width: 289px;
-  margin: 30px;
-  font-size: 52px;
+  width: 220px;
+  display: flex;
+  font-size: 40px;
   color: black;
+  line-height: 64px;
   background-color: white;
-  line-height: 78px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
 }
 
 .wrap {
@@ -140,41 +141,50 @@ button {
   display: flex;
   justify-content: space-between;
 
-  width: 1532px;
+  width: 1520px;
 }
 
 .wrap .item {
   display: flex;
   flex-direction: column;
-  width: 503px;
+  width: 480px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .wrap .item .word {
-  width: 471px;
-  height: 123px;
+  width: 480px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  position: absolute;
+  margin-top: 117.5px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.789);
+  background-color: #ffffffc4;
 }
 
-.wrap .item .word p {
-  padding: 0 30px;
+.wrap .item p {
+  padding: 30px;
   text-align: left;
   font-size: 20px;
-  color: #717171;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
 }
 
-.wrap .item .word h3 {
+.wrap .item h3 {
   font-size: 24px;
   text-align: center;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 1.5px;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
-
 .journey {
   display: flex;
   flex-direction: column;
@@ -183,82 +193,96 @@ button {
 }
 
 .journey .title {
+  width: 280px;
+  height: 64px;
   background-color: #2b3e79;
-  height: 78px;
-  font-size: 52px;
-  color: black;
-  letter-spacing: 23;
-  text-align: center;
-  line-height: 78px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: 50px;
 }
 
 .journey .title h3 {
-  width: 289px;
-  margin: 30px;
-  font-size: 52px;
+  width: 220px;
+  display: flex;
+  font-size: 40px;
   color: black;
+  line-height: 64px;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
   background-color: white;
-  line-height: 78px;
+  justify-content: center;
+  align-items: center;
 }
 
 .journey .card {
   display: flex;
-  width: 1532px;
-
+  width: 1520px;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+.journey .item {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .journey .card .card_top {
   display: flex;
-  flex-direction: row;
-  width: 1542px;
   justify-content: space-between;
+
+  width: 1520px;
+  align-content: center;
 }
 
 .journey .card .card_down {
   display: flex;
-  flex-direction: row;
-  width: 1542px;
   justify-content: space-between;
-}
 
-.journey .card .item .word img {
-  position: relative;
+  width: 1520px;
 }
 
 .journey .card .item h3 {
   text-align: center;
   font-size: 28px;
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.789);
+  letter-spacing: 1.5px;
 }
 
 .journey .card .item .word {
-  width: 471px;
-  height: 123px;
+  width: 480px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  margin-top: 117.5px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.789);
+  background-color: #ffffffc4;
 }
 
-.journey .card .item .word p {
-  padding: 0 30px;
+.journey .card .item p {
+  padding: 30px;
   text-align: left;
   font-size: 20px;
-  color: #000000;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
 }
 
-.journey .card .item .word h3 {
+.journey .card .item h3 {
   font-size: 24px;
   text-align: center;
   padding: 0;
   margin: 0;
 }
-
 .wrap_food .food {
   display: flex;
   justify-content: center;
@@ -268,34 +292,32 @@ button {
 }
 
 .wrap_food .food .title {
+  width: 280px;
+  height: 64px;
   background-color: #2b3e79;
-  height: 78px;
-  font-size: 52px;
-  color: black;
-  letter-spacing: 23;
-  text-align: center;
-  line-height: 78px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: 50px;
 }
 
 .wrap_food .food .title h3 {
-  width: 289px;
-  margin: 30px;
-
-  font-size: 52px;
+  width: 220px;
+  display: flex;
+  font-size: 40px;
   color: black;
+  line-height: 64px;
   background-color: white;
-
-  line-height: 78px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
 }
 
 .wrap_food .food .card {
   display: flex;
   height: 496px;
-  width: 1543px;
+  width: 1520px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -313,7 +335,7 @@ button {
 
   font-size: 24px;
   line-height: 64px;
-  width: 380px;
+  width: 360px;
   height: 60px;
   text-align: center;
   letter-spacing: 6%;
@@ -323,8 +345,8 @@ button {
   padding: 0;
   margin: 0;
   color: rgb(0, 0, 0);
-  font-family: inter;
-  font-weight: bolder;
+  font-family: "Noto Serif TC", serif;
+  font-weight: normal;
 }
 
 .news_bottom {

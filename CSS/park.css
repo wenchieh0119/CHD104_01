@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: noto sanstc;
+  font-family: "noto sanstc";
 
   letter-spacing: 1px;
 }
@@ -96,6 +96,7 @@ button {
 }
 
 .banner .title h2 {
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
   position: absolute;
   font-size: 40px;
   top: 0;
@@ -124,31 +125,28 @@ button {
   margin: 0;
 }
 .top_btn ul {
+  background-color: #2b3e79;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 120px;
-  background-color: #2b3e79;
-
+  padding: 20px 0;
   margin: 0;
 }
 
 .top_btn ul li {
   font-size: 24px;
   color: black;
-
   list-style-type: none;
   margin: 0 10px;
   width: 180px;
   height: 80px;
-
   background-color: #ffbe00;
   border: none;
-  font-family: inter;
+  font-family: "inter";
   text-align: center;
-
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top_btn ul li a {
@@ -164,7 +162,6 @@ button {
   border-radius: 50%;
   overflow: hidden;
 }
-
 .hotview_park {
   width: 100%;
   display: flex;
@@ -179,7 +176,7 @@ button {
   background-color: #2b3e79;
   text-align: center;
   letter-spacing: 5px;
-  font-size: 24px;
+  font-size: 36px;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -205,7 +202,8 @@ button {
   font-size: 24px;
   padding-top: 25px;
   background-color: #2b3e79;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  font-family: "Saira Extra Condensed", "noto sanstic";
 }
 
 .hotview_park .word:hover .hover {
@@ -233,7 +231,9 @@ button {
   font-size: 20px;
   background: transparent;
   border: 2px solid #2b3e79;
-  font-family: roboto;
+  font-family: "Saira Extra Condensed", sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 500;
   text-align: center;
   display: inline-block;
   color: black;

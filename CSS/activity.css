@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: noto sanstc;
+  font-family: "noto sanstc";
 
   letter-spacing: 1px;
 }
@@ -176,7 +176,7 @@ button {
   color: black;
   width: 1200px;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
   align-items: center;
   border: rgb(181, 181, 181) solid 1px;
 }
@@ -189,19 +189,21 @@ button {
 
 .card .item .word h3 {
   font-size: 24px;
-  letter-spacing: 10%;
+  letter-spacing: 1px;
   text-align: left;
-
+  font-family: "noto sanstc";
+  font-weight: 600;
   padding: 10px;
   margin: 0;
 }
 .card .item .word p {
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   line-height: 1.5;
+  font-family: "inter";
   margin: 10px 0 0 0;
   padding: 0 10px;
-  letter-spacing: 30%;
+  letter-spacing: 1px;
 }
 
 .btn-view button {
@@ -210,7 +212,9 @@ button {
   font-size: 20px;
   background: transparent;
   border: 2px solid #ffbe00;
-  font-family: roboto;
+  font-family: "Saira Extra Condensed", sans-serif;
+  letter-spacing: 0.7px;
+  font-weight: 500;
   text-align: center;
   display: inline-block;
   color: black;

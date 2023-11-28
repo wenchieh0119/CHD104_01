@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: noto sanstc;
+  font-family: "noto sanstc";
 
   letter-spacing: 1px;
 }
@@ -77,8 +77,8 @@ button {
 
 .wrap .left {
   width: 770px;
-  height: 1385px;
-  background-color: #e4e4e4;
+  height: 1400px;
+  background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,41 +88,50 @@ button {
 .wrap .left .top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   width: 627px;
+  height: 200px;
   margin-bottom: 40px;
 }
-.wrap .left .top h2 {
+.wrap .left .top .title {
   font-size: 28px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 1.5px;
-  padding: 30px 0px;
-  width: 440px;
-  border-radius: 50px;
-  background-color: #ffbe00;
+  color: white;
+  font-family: "noto sanstc";
+  width: 360px;
+  height: 100px;
+  border-radius: 70px;
+  background-color: #2b3e79;
 }
-.wrap .left .top p {
+.wrap .left .top .date {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 2;
+  font-family: "Saira Extra Condensed", sans-serif;
   letter-spacing: 1px;
   margin: 0;
-  padding: 0 30px;
-  border-radius: 10px;
-  background-color: #ffbe00;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  color: white;
+  background-color: #2b3e79;
 }
 
 .wrap .left .bottom {
   width: 587px;
   height: 313px;
   display: flex;
-  background-color: #ffbe00;
+  background-color: #2b3e79;
+  color: white;
   padding: 0 20px;
   margin-top: 40px;
 }
@@ -137,7 +146,7 @@ button {
 
 .plan {
   width: 630px;
-  height: 1385px;
+  height: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,6 +155,7 @@ button {
 }
 
 .plan .date {
+  font-family: "Saira Extra Condensed", sans-serif;
   display: flex;
   width: 500px;
   margin-bottom: 30px;
@@ -205,10 +215,11 @@ button {
   height: 30px;
   border-radius: 50px;
   background-color: white;
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 0;
   display: flex;
   justify-content: center;
+  font-family: "Saira Extra Condensed", sans-serif;
   align-items: center;
 }
 
@@ -218,15 +229,18 @@ button {
 }
 
 .card > .left .bottom {
+  font-family: "Saira Extra Condensed", sans-serif;
   width: 110px;
   height: 30px;
   border-radius: 50px;
   background-color: white;
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 .card > .right {
@@ -240,6 +254,7 @@ button {
   border-radius: 50px;
   width: 250px;
   height: 40px;
+  letter-spacing: 1.5px;
   background-color: white;
   font-size: 20px;
   margin: 16px 0;
@@ -254,6 +269,7 @@ button {
   font-size: 14px;
   display: flex;
   justify-content: center;
+  letter-spacing: 0.7px;
   align-items: center;
 }
 
@@ -269,6 +285,7 @@ button {
   text-align: left;
   padding-top: 20px;
   padding-left: 20px;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 .time {
   font-size: 20px;
@@ -284,11 +301,12 @@ button {
   background-color: #ffbe00;
   border: #e4e4e4 2px solid;
   text-align: center;
-  font-size: 20px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 6px;
+  font-size: 24px;
   letter-spacing: 1.5px;
 }
 
@@ -303,6 +321,7 @@ button {
   border: white 1px solid;
   border-radius: 50px;
   margin-top: 50px;
+  letter-spacing: 1.5px;
 }
 .footer .wrap {
   display: flex;
