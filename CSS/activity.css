@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: "noto sanstc";
+  font-family: noto sanstc;
 
   letter-spacing: 1px;
 }
@@ -122,7 +122,6 @@ button {
   letter-spacing: 12px;
   margin: 0;
 }
-
 .top_btn ul {
   background-color: #2b3e79;
   display: flex;
@@ -134,22 +133,35 @@ button {
 
 .top_btn ul li {
   font-size: 24px;
-  color: black;
+  color: #2b3e79;
   list-style-type: none;
   margin: 0 10px;
   width: 180px;
   height: 80px;
-  background-color: #ffbe00;
+  background-color: #2b3e79;
   border: none;
-  font-family: inter;
+  font-family: "inter";
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: #ffbe00 solid 1px;
+}
+
+.top_btn ul li:hover {
+  background-color: #ffbe00;
+  color: rgb(0, 0, 0);
+}
+
+.top_btn ul li a:hover {
+  color: rgb(0, 0, 0);
 }
 
 .top_btn ul li a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -157,10 +169,12 @@ button {
   font-size: 32px;
   background-color: white;
   text-align: center;
+  color: #000000;
   padding: 12px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -176,7 +190,7 @@ button {
   color: black;
   width: 1200px;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
   align-items: center;
   border: rgb(181, 181, 181) solid 1px;
 }
