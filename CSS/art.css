@@ -260,12 +260,21 @@ button {
   text-align: center;
   display: inline-block;
   color: black;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
   margin: 50px 0;
+  opacity: 0.8;
+  border-radius: 30px;
+  transition: 0.6s ease-in;
+  position: relative;
+}
+.btn button:hover {
+  opacity: 1;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffbe00;
+  height: 60px;
+  width: 148px;
+  border-radius: 10px;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .footer .wrap {
