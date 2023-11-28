@@ -1,6 +1,6 @@
 .main-header {
   background-color: #ffbe00;
-
+  background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
   width: 100%;
   height: 100px;
   display: flex;
@@ -486,7 +486,7 @@ button {
 
 .wrap_activity .activity_frontpage {
   width: 100%;
-  position: relative;
+  background-size: cover;
   background-image: url("../img/front/backgound.svg");
   background-repeat: no-repeat;
 }

@@ -1,5 +1,6 @@
 .main-header {
   background-color: #ffbe00;
+  background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
   width: 100%;
   height: 100px;
   display: flex;
@@ -53,6 +54,8 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
+  font-family: noto sanstc;
+
   letter-spacing: 1px;
 }
 
@@ -261,6 +264,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 70px;
 }
 
 .wrap_food .food .title {
@@ -325,25 +329,61 @@ button {
 
 .news_bottom {
   width: 100%;
+  display: flex;
+}
+
+.news_bottom .bottom_left {
+  width: 50%;
+
   margin: auto;
   overflow: hidden;
 }
 
-.news_bottom .item {
+.news_bottom .bottom_right {
+  width: 50%;
+
+  margin: auto;
+  overflow: hidden;
+}
+
+.news_bottom .bottom_left .item {
   float: left;
+  position: relative;
+}
+
+.news_bottom .bottom_right .item {
+  float: right;
   position: relative;
 }
 
 .news_bottom .item img {
   width: 100%;
+  height: 100%;
   vertical-align: middle;
 }
-.news_bottom .item:first-child {
+.news_bottom .bottom_left .item:first-child {
   width: 50%;
+  height: 50%;
 }
 
-.news_bottom .item:first-child ~ .item {
+.news_bottom .bottom_left .item:nth-child(n + 2):nth-child(-n + 5) {
   width: 25%;
+  height: 25%;
+}
+
+.news_bottom .bottom_left .item {
+  float: left;
+  position: relative;
+}
+
+.news_bottom .bottom_right .item:first-child {
+  width: 50%;
+  height: 50%;
+}
+
+.news_bottom .bottom_right .item:nth-child(n + 2):nth-child(-n + 5) {
+  width: 25%;
+  height: 25%;
 }
 
 .news_bottom .item .txt {
@@ -401,8 +441,9 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: fantasy;
+  font-family: noto sanstc;
   font-weight: lighter;
+  padding: 0 8px;
 }
 
 .footer .wrap nav ul li a {
