@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: "noto sanstc";
+  font-family: "inter";
 
   letter-spacing: 1px;
 }
@@ -172,6 +172,7 @@ button {
   padding: 12px;
   border-radius: 50%;
   overflow: hidden;
+  font-family: "inter";
 }
 
 .wrap {
@@ -195,6 +196,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  font-family: "inter";
 }
 
 .card {
@@ -236,6 +238,7 @@ button {
   justify-content: center;
   background-color: #ffbe00;
   padding: 10px;
+  font-family: "inter";
 
   margin: 0;
 }
@@ -246,6 +249,7 @@ button {
   margin: 20px 0 0 0;
   letter-spacing: 30%;
   padding: 0 34px;
+  font-family: "inter";
 }
 
 .btn button {
@@ -303,7 +307,7 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: noto sanstc;
+  font-family: "inter";
   font-weight: lighter;
   padding: 0 8px;
 }

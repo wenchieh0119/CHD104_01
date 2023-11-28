@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: "noto sanstc";
+  font-family: "inter";
 
   letter-spacing: 1px;
 }
@@ -105,6 +105,7 @@ button {
   color: white;
   letter-spacing: 10px;
   text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+  font-family: "inter";
 }
 
 .banner h1 {
@@ -119,6 +120,7 @@ button {
   align-items: center;
   letter-spacing: 12px;
   margin: 0;
+  font-family: "inter";
 }
 .top_btn ul {
   background-color: #2b3e79;
@@ -237,7 +239,7 @@ button {
   text-align: center;
   letter-spacing: 4px;
   color: white;
-  font-family: "noto sanstc";
+  font-family: "inter";
   font-weight: 600;
 }
 
@@ -304,7 +306,7 @@ button {
   font-size: 32px;
   letter-spacing: 2px;
   text-align: center;
-  font-family: "noto sanstc";
+  font-family: "inter";
 }
 
 .view_wrap .card {
@@ -415,7 +417,7 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: noto sanstc;
+  font-family: "inter";
   font-weight: lighter;
   padding: 0 8px;
 }

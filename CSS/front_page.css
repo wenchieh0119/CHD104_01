@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: "noto sanstc";
+  font-family: "inter";
 
   letter-spacing: 1px;
 }
@@ -82,7 +82,7 @@ button {
   text-shadow: 1px 1px 1px #2b3e79, 2px 2px 2px#2b3e79, 3px 3px 3px #2b3e79,
     4px 4px 4px #2b3e79;
   font-size: 44px;
-  font-family: "Noto Sans CJK TC", serif;
+  font-family: "inter";
   font-weight: 500;
   position: absolute;
   top: 0;
@@ -142,7 +142,7 @@ button {
   font-size: 40px;
   color: black;
   line-height: 64px;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   font-weight: 600;
   background-color: white;
   justify-content: center;
@@ -170,7 +170,7 @@ button {
   color: #000000;
   border-right: #000000 solid 2px;
   padding: 0 10px;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   text-decoration: none;
 }
 
@@ -306,7 +306,7 @@ button {
   background-color: white;
   justify-content: center;
   align-items: center;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -332,7 +332,7 @@ button {
   color: #000000;
   border-right: #000000 solid 2px;
   padding: 0 10px;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   text-decoration: none;
 }
 
@@ -414,7 +414,7 @@ button {
   background-color: white;
   justify-content: center;
   align-items: center;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -435,7 +435,7 @@ button {
   color: #000000;
   border-right: #000000 solid 2px;
   padding: 0 10px;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   text-decoration: none;
 }
 
@@ -535,7 +535,7 @@ button {
   align-items: center;
   justify-content: center;
   letter-spacing: 3px;
-  font-family: "Noto Serif TC", serif;
+  font-family: "inter";
   text-shadow: 0px 1px 1px #4e4e4e, 0px 2px 2px #4e4e4e, 0px 3px 3px #4e4e4e,
     0px 4px 4px #4e4e4e;
 }
@@ -586,6 +586,7 @@ button {
   margin: 0;
   padding: 6px 0;
   color: #ffffff;
+  font-family: "inter";
 }
 
 .wrap_bottom .word {
@@ -606,6 +607,7 @@ button {
   text-align: left;
   letter-spacing: 1px;
   margin: 0;
+  font-family: "inter";
 }
 
 .wrap_bottom .word p {
@@ -615,6 +617,7 @@ button {
   letter-spacing: 1px;
   margin: 0;
   padding: 10px 0;
+  font-family: "inter";
 }
 
 .footer .wrap {
@@ -643,7 +646,7 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: "noto sanstc";
+  font-family: "inter";
   font-weight: 5 00;
   padding: 0 8px;
 }

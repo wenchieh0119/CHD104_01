@@ -54,8 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: noto sanstc;
-
+  font-family: "inter";
   letter-spacing: 1px;
 }
 
@@ -192,7 +191,7 @@ button {
   font-size: 20px;
   letter-spacing: 10%;
   text-align: center;
-
+  font-family: "inter";
   border-bottom: #c4c4c4 solid 1px;
   padding: 10px;
   margin: 0;
@@ -205,6 +204,7 @@ button {
   margin: 10px 0;
   padding: 0 10px;
   letter-spacing: 1px;
+  font-family: "inter";
 }
 
 .wrap .btn button {
@@ -264,7 +264,7 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: noto sanstc;
+  font-family: "inter";
   font-weight: lighter;
   padding: 0 8px;
 }

@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: "noto sanstc";
+  font-family: "inter";
 
   letter-spacing: 1px;
 }
@@ -102,7 +102,7 @@ button {
   align-items: center;
   letter-spacing: 1.5px;
   color: white;
-  font-family: "noto sanstc";
+  font-family: "inter";
   width: 360px;
   height: 100px;
   border-radius: 70px;
@@ -141,7 +141,8 @@ button {
   display: flex;
   align-items: center;
   line-height: 1.5;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-family: "inter";
 }
 
 .plan {
@@ -155,7 +156,7 @@ button {
 }
 
 .plan .date {
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: "inter";
   display: flex;
   width: 500px;
   margin-bottom: 30px;
@@ -167,7 +168,7 @@ button {
   width: 535px;
   height: 210px;
   background-color: #ffbe00;
-
+  font-family: "inter";
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
@@ -229,7 +230,7 @@ button {
 }
 
 .card > .left .bottom {
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: "inter";
   width: 110px;
   height: 30px;
   border-radius: 50px;
@@ -241,6 +242,7 @@ button {
   align-items: center;
   letter-spacing: 1px;
   line-height: 1.5;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .card > .right {
@@ -261,6 +263,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "inter";
 }
 
 .card > .right .add {
@@ -271,6 +274,7 @@ button {
   justify-content: center;
   letter-spacing: 0.7px;
   align-items: center;
+  font-family: "inter";
 }
 
 .card > .right .bottom {
@@ -285,13 +289,14 @@ button {
   text-align: left;
   padding-top: 20px;
   padding-left: 20px;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: "inter";
 }
 .time {
   font-size: 20px;
   margin: 20px 0;
   letter-spacing: 1px;
   color: white;
+  font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .box {
@@ -301,7 +306,7 @@ button {
   background-color: #ffbe00;
   border: #e4e4e4 2px solid;
   text-align: center;
-
+  font-family: "Saira Extra Condensed", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,6 +327,7 @@ button {
   border-radius: 50px;
   margin-top: 50px;
   letter-spacing: 1.5px;
+  font-family: "inter";
 }
 .footer .wrap {
   display: flex;
@@ -349,7 +355,7 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: noto sanstc;
+  font-family: "inter";
   font-weight: lighter;
   padding: 0 8px;
 }

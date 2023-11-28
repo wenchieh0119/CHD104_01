@@ -54,7 +54,7 @@ button {
   display: inline;
   margin: 0 10px;
   font-size: 24px;
-  font-family: noto sanstc;
+  font-family: "inter";
 
   letter-spacing: 1px;
 }
@@ -106,6 +106,7 @@ button {
   color: white;
   letter-spacing: 10px;
   text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+  font-family: "inter";
 }
 
 .banner h1 {
@@ -121,6 +122,7 @@ button {
   align-items: center;
   letter-spacing: 12px;
   margin: 0;
+  font-family: "inter";
 }
 .top_btn ul {
   background-color: #2b3e79;
@@ -206,7 +208,7 @@ button {
   font-size: 24px;
   letter-spacing: 1px;
   text-align: left;
-  font-family: "noto sanstc";
+  font-family: "inter";
   font-weight: 600;
   padding: 10px;
   margin: 0;
@@ -277,7 +279,7 @@ button {
   display: inline;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: noto sanstc;
+  font-family: "inter";
   font-weight: lighter;
   padding: 0 8px;
 }
