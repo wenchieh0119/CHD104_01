@@ -80,6 +80,9 @@ button {
 }
 
 .wrap {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -291,6 +294,7 @@ button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-image: none;
 }
 
 .footer .wrap .logo {

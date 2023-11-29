@@ -112,6 +112,8 @@ button {
   font-size: 40px;
   width: 100%;
   background-color: #2b3e79;
+  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   height: 100px;
   color: white;
   text-align: center;
@@ -124,6 +126,8 @@ button {
 }
 .top_btn ul {
   background-color: #2b3e79;
+  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,6 +143,8 @@ button {
   width: 180px;
   height: 80px;
   background-color: #2b3e79;
+  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   border: none;
   font-family: "inter";
   text-align: center;
@@ -153,7 +159,9 @@ button {
 }
 
 .top_btn ul li:hover {
-  background-color: #ffbe00;
+  background-color: #ffc800;
+  background-image: url("https://www.transparenttextures.com/patterns/leather.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   color: rgb(0, 0, 0);
 }
 
@@ -189,7 +197,9 @@ button {
 .hotview_wrap .title {
   width: 1320px;
   height: 80px;
-  background-color: #ffbe00;
+  background-color: #ffc800;
+  background-image: url("https://www.transparenttextures.com/patterns/leather.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,6 +307,8 @@ button {
   width: 1320px;
   height: 80px;
   background-color: #2b3e79;
+  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   justify-content: center;
   align-items: center;

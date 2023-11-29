@@ -70,6 +70,9 @@ button {
 
 .wrap {
   width: 100%;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .wrap .banner {
@@ -145,6 +148,8 @@ button {
   font-family: "inter";
   font-weight: 600;
   background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   justify-content: center;
   align-items: center;
   letter-spacing: 1.5px;
@@ -159,6 +164,8 @@ button {
 
   text-align: center;
   background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-left: 70px;
   padding: 0;
 }
@@ -274,6 +281,9 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .wrap_domestic .domestic .title {
@@ -303,7 +313,9 @@ button {
   font-size: 40px;
   color: black;
   line-height: 78px;
-  background-color: white;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   justify-content: center;
   align-items: center;
   font-family: "inter";
@@ -316,6 +328,8 @@ button {
   flex-direction: row;
 
   background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-left: 70px;
   padding: 0;
   letter-spacing: 8%;
@@ -382,6 +396,9 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .wrap_foreign .foreign .title {
@@ -411,7 +428,9 @@ button {
   font-size: 40px;
   color: black;
   line-height: 78px;
-  background-color: white;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   justify-content: center;
   align-items: center;
   font-family: "inter";
@@ -422,8 +441,9 @@ button {
 .wrap_foreign .foreign .title .path {
   display: flex;
   flex-direction: row;
-
   background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-left: 70px;
   padding: 0;
 }
@@ -480,11 +500,28 @@ button {
   letter-spacing: 1.5px;
 }
 
+.wrap_activity {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
 .wrap_activity .activity_frontpage {
+  height: 1000px;
   width: 100%;
-  background-size: cover;
-  background-image: url("../img/front/backgound.svg");
-  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .wrap_activity .activity_frontpage .content {
@@ -492,7 +529,44 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 170px;
+}
+
+.wrap_activity .activity_frontpage .title {
+  width: 1200px;
+  justify-content: left;
+  text-align: center;
+  line-height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.wrap_activity .activity_frontpage .title_h3 {
+  width: 280px;
+  height: 64px;
+  background-color: #2b3e79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap_activity .activity_frontpage .title h3 {
+  width: 220px;
+  display: flex;
+  font-size: 40px;
+  color: black;
+  line-height: 78px;
+  background-color: #f3f3f3;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  justify-content: center;
+  align-items: center;
+  font-family: "inter";
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .wrap_activity .activity_frontpage .content .top {
@@ -529,7 +603,7 @@ button {
   font-size: 32px;
   font-weight: bolder;
   position: absolute;
-  color: white;
+  color: rgb(0, 0, 0);
   top: 0;
   right: 0;
   bottom: 0;
@@ -540,8 +614,7 @@ button {
   justify-content: center;
   letter-spacing: 3px;
   font-family: "inter";
-  text-shadow: 0px 1px 1px #4e4e4e, 0px 2px 2px #4e4e4e, 0px 3px 3px #4e4e4e,
-    0px 4px 4px #4e4e4e;
+  text-shadow: 1px 1px #eeeeee, 2px 2px #eeeeee, 3px 3px #eeeeee;
 }
 
 .wrap_bottom {
@@ -680,6 +753,7 @@ button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-image: none;
 }
 
 .footer .wrap .logo {
