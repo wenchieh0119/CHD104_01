@@ -288,6 +288,7 @@ button {
   text-align: center;
   letter-spacing: 1px;
   box-shadow: 0 5px 4px gray;
+  color: #000000;
 }
 
 .back-to-top a {

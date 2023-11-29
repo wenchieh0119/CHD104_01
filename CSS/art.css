@@ -248,7 +248,7 @@ button {
   text-align: left;
   line-height: 1.5;
   margin: 20px 0 0 0;
-  letter-spacing: 30%;
+  letter-spacing: 1px;
   padding: 0 14px;
   font-family: "inter";
 }
@@ -315,6 +315,7 @@ button {
   text-align: center;
   letter-spacing: 1px;
   box-shadow: 0 5px 4px gray;
+  color: #000000;
 }
 
 .back-to-top a {
