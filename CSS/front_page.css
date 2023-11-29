@@ -508,18 +508,13 @@ button {
 .wrap_activity .activity_frontpage .content .down {
   height: 300px;
 }
-:root {
-  /* --shadow-color: rgb(68, 68, 68); */
-}
+
 .wrap_activity .activity_frontpage .content .item {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
-  /* box-shadow: 0px 1px 1px var(--shadow-color), 0px 2px 2px var(--shadow-color), */
-  /* 0px 3px 3px var(--shadow-color), 0px 4px 4px var(--shadow-color), */
-  /* 0px 5px 5px var(--shadow-color), 0px 6px 6px var(--shadow-color);? */
 
   box-shadow: 0px 20px 15px #232d34;
 
@@ -628,6 +623,52 @@ button {
   margin: 0;
   padding: 10px 0;
   font-family: "inter";
+}
+
+.back-to-top {
+  /* 默認是隱藏的，這樣在第一屏才不顯示 */
+
+  position: fixed; /* 位置是固定的 */
+
+  bottom: 50px; /* 顯示在頁面底部 */
+
+  right: 50px; /* 顯示在頁面的右邊 */
+
+  z-index: 99; /* 確保不被其他功能覆蓋 */
+
+  border: 3px solid #ffbe00; /* 顯示邊框 */
+
+  outline: none; /* 不顯示外框 */
+
+  background-color: white; /* 設置背景背景顏色 */
+
+  /* 設置文本顏色 */
+
+  cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+
+  padding: 15px; /* 增加一些內邊距 */
+  font-family: "Saira Extra Condensed", sans-serif;
+
+  border-radius: 10px; /* 增加圓角 */
+  width: 30px;
+  height: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 4px gray;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.back-to-top:hover {
+  background-color: #ffbe00;
+  border-color: #fff;
 }
 
 .footer .wrap {
