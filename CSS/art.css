@@ -148,6 +148,7 @@ button {
   transition-duration: 0.4s;
   cursor: pointer;
   border: #ffbe00 solid 1px;
+  padding-left: 10px;
 }
 
 .top_btn ul li:hover {
@@ -173,6 +174,7 @@ button {
   border-radius: 50%;
   overflow: hidden;
   font-family: "inter";
+  margin: 10px;
 }
 
 .wrap {
@@ -220,7 +222,6 @@ button {
   padding: 20px 10px;
   margin-top: 50px;
   align-items: center;
-  border: 1px #bcbcbc solid;
 }
 
 .card .item .word {
@@ -248,7 +249,7 @@ button {
   line-height: 1.5;
   margin: 20px 0 0 0;
   letter-spacing: 30%;
-  padding: 0 34px;
+  padding: 0 14px;
   font-family: "inter";
 }
 

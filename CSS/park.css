@@ -153,6 +153,7 @@ button {
   transition-duration: 0.4s;
   cursor: pointer;
   border: #ffbe00 solid 1px;
+  padding-left: 10px;
 }
 
 .top_btn ul li:hover {
@@ -178,6 +179,7 @@ button {
   border-radius: 50%;
   overflow: hidden;
   font-family: "inter";
+  margin: 10px;
 }
 .hotview_park {
   width: 100%;
