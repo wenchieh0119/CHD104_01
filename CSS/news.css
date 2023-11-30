@@ -52,7 +52,7 @@ button {
 .main-header nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 0 8px;
+  margin: 0 6px;
   font-size: 24px;
   font-family: "inter";
   letter-spacing: 1px;
@@ -139,21 +139,21 @@ button {
   display: flex;
   justify-content: space-between;
 
-  width: 1520px;
+  width: 1200px;
 }
 
 .wrap .item {
   display: flex;
   flex-direction: column;
-  width: 480px;
+  width: 380px;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
 .wrap .item .word {
-  width: 480px;
-  height: 100px;
+  width: 380px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,16 +166,19 @@ button {
 }
 
 .wrap .item p {
-  padding: 30px;
+  margin: 10px;
+  padding: 0 10px;
   text-align: left;
   font-size: 20px;
   font-family: "inter";
   letter-spacing: 0.7px;
   line-height: 1.5;
+  height: 100px;
+  width: 360px;
 }
 
 .wrap .item h3 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   font-family: "inter";
   letter-spacing: 1.5px;
@@ -215,7 +218,7 @@ button {
 
 .journey .card {
   display: flex;
-  width: 1520px;
+  width: 1200px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -224,7 +227,7 @@ button {
 .journey .item {
   display: flex;
   flex-direction: column;
-  width: 480px;
+  width: 380px;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -234,7 +237,7 @@ button {
   display: flex;
   justify-content: space-between;
 
-  width: 1520px;
+  width: 1200px;
   align-content: center;
 }
 
@@ -242,7 +245,7 @@ button {
   display: flex;
   justify-content: space-between;
 
-  width: 1520px;
+  width: 1200px;
 }
 
 .journey .card .item h3 {
@@ -254,8 +257,8 @@ button {
 }
 
 .journey .card .item .word {
-  width: 480px;
-  height: 100px;
+  width: 380px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,17 +271,22 @@ button {
 }
 
 .journey .card .item p {
-  padding: 30px;
+  padding: 10px;
+  padding: 0 10px;
   text-align: left;
   font-size: 20px;
   font-family: "inter";
   letter-spacing: 0.7px;
   line-height: 1.5;
+  height: 100px;
+  width: 360px;
 }
 
 .journey .card .item h3 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
@@ -315,8 +323,8 @@ button {
 
 .wrap_food .food .card {
   display: flex;
-  height: 496px;
-  width: 1520px;
+  height: 320px;
+  width: 1200px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -336,7 +344,7 @@ button {
 }
 
 .wrap_food .food .card .item img:hover {
-  transform: scale(1.3, 1.3);
+  transform: scale(1.5, 1.5);
 }
 
 .wrap_food .food .card .item h4 {
@@ -344,7 +352,7 @@ button {
 
   font-size: 24px;
   line-height: 64px;
-  width: 360px;
+  width: 280px;
   height: 60px;
   text-align: center;
   letter-spacing: 6%;

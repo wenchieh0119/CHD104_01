@@ -53,7 +53,7 @@ button {
 .main-header nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 0 8px;
+  margin: 0 6px;
   font-size: 24px;
   font-family: "inter";
 
@@ -70,7 +70,6 @@ button {
 }
 
 .wrap {
-  margin: auto;
   width: 100%;
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
@@ -78,7 +77,6 @@ button {
 }
 
 .wrap .banner {
-  margin: auto;
   position: relative;
   display: flex;
   width: 100%;
@@ -115,7 +113,6 @@ button {
 }
 
 .wrap .news {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +120,7 @@ button {
 }
 
 .wrap .news .title {
-  width: 1200px;
+  width: 1180px;
   justify-content: left;
   text-align: center;
   line-height: 78px;
@@ -201,7 +198,7 @@ button {
   justify-content: space-between;
   align-items: center;
 
-  width: 1440px;
+  width: 1180px;
 }
 
 .wrap .news .card .item_top .item {
@@ -209,16 +206,12 @@ button {
 }
 
 .wrap .news .card .item_top .item .up {
-  height: 366px;
-  width: 466px;
   position: absolute;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 
 .wrap .news .card .item_down .item .up {
-  height: 350px;
-  width: 344px;
   position: absolute;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
@@ -250,14 +243,11 @@ button {
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
-  width: 1440px;
+  width: 1180px;
 }
 
 .wrap .news .card .item_down .item {
   position: relative;
-
-  height: "366px";
-  width: "466px";
 }
 
 .wrap .news .card .item_down .item p {
@@ -291,7 +281,7 @@ button {
 }
 
 .wrap_domestic .domestic .title {
-  width: 1200px;
+  width: 1180px;
   justify-content: left;
   text-align: center;
   line-height: 64px;
@@ -366,7 +356,7 @@ button {
 .wrap_domestic .domestic .card {
   display: flex;
   font-display: row;
-  width: 1440px;
+  width: 1180px;
   height: 390px;
   justify-content: space-between;
 }
@@ -381,7 +371,7 @@ button {
   font-size: 24px;
   line-height: 64px;
   letter-spacing: 1px;
-  width: 340px;
+  width: 280px;
   height: 64px;
   text-align: center;
   display: flex;
@@ -406,7 +396,7 @@ button {
 }
 
 .wrap_foreign .foreign .title {
-  width: 1200px;
+  width: 1180px;
   justify-content: left;
   text-align: center;
   line-height: 64px;
@@ -427,7 +417,7 @@ button {
 }
 
 .wrap_foreign .foreign .title h3 {
-  width: 220px;
+  width: 1180px;
   display: flex;
   font-size: 40px;
   color: black;
@@ -475,7 +465,7 @@ button {
 .wrap_foreign .foreign .card {
   display: flex;
   font-display: row;
-  width: 1440px;
+  width: 1180px;
   height: 390px;
   justify-content: space-between;
 }
@@ -489,7 +479,7 @@ button {
   background-color: #ffbe00;
   font-size: 24px;
   line-height: 64px;
-  width: 340px;
+  width: 280px;
   height: 64px;
   text-align: center;
   letter-spacing: 6%;
@@ -536,7 +526,7 @@ button {
 }
 
 .wrap_activity .activity_frontpage .title {
-  width: 1200px;
+  width: 1180px;
   justify-content: left;
   text-align: center;
   line-height: 64px;
@@ -578,7 +568,7 @@ button {
 }
 
 .wrap_activity .activity_frontpage .content .middle {
-  width: 1300px;
+  width: 1180px;
   display: flex;
   justify-content: space-around;
 }

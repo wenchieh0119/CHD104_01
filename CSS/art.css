@@ -52,7 +52,7 @@ button {
 .main-header nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 0 8px;
+  margin: 0 6px;
   font-size: 24px;
   font-family: "inter";
 
@@ -195,7 +195,7 @@ button {
 }
 
 .wrap .title {
-  width: 1300px;
+  width: 1200px;
   height: 74px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
@@ -212,7 +212,7 @@ button {
 
 .card {
   display: flex;
-  width: 1300px;
+  width: 1140px;
   height: 2125px;
 
   flex-direction: row;
@@ -227,7 +227,7 @@ button {
   display: flex;
   flex-direction: column;
   height: 460px;
-  width: 400px;
+  width: 300px;
   padding: 20px 10px;
   margin-top: 50px;
   align-items: center;

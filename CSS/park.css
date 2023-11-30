@@ -53,7 +53,7 @@ button {
 .main-header nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 0 8px;
+  margin: 0 6px;
   font-size: 24px;
   font-family: "inter";
 
@@ -197,7 +197,7 @@ button {
 }
 
 .hotview_park .title {
-  width: 1300px;
+  width: 1140px;
   height: 100px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
@@ -217,14 +217,14 @@ button {
 .hotview_park .card {
   display: flex;
   flex-direction: row;
-  width: 1300px;
+  width: 1140px;
   height: 650px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
 
 .hotview_park .word {
-  width: 412px;
+  width: 360px;
   height: 60px;
   text-align: center;
   color: #ffffff;
@@ -245,7 +245,7 @@ button {
   margin: 40px 0;
   display: none;
 
-  width: 350px;
+  width: 300px;
   height: 80px;
   font-size: 18px;
   padding: 30px;
