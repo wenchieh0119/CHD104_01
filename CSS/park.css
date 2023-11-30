@@ -54,7 +54,7 @@ button {
   list-style-type: none;
   display: inline;
   margin: 0 6px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "inter";
 
   letter-spacing: 1px;
@@ -198,7 +198,7 @@ button {
 
 .hotview_park .title {
   width: 1140px;
-  height: 100px;
+  height: 80px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -239,6 +239,9 @@ button {
 
 .hotview_park .word:hover .hover {
   display: block;
+  width: 300px;
+  height: 60px;
+  border: black solid 1px;
 }
 
 .hotview_park .hover {
@@ -253,7 +256,6 @@ button {
   letter-spacing: 1px;
   line-height: 1.5;
   color: #000000;
-  background-color: #ffbe00;
 }
 
 .btn button {

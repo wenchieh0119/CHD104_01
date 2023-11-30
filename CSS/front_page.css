@@ -54,7 +54,7 @@ button {
   list-style-type: none;
   display: inline;
   margin: 0 6px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "inter";
 
   letter-spacing: 1px;
@@ -85,7 +85,7 @@ button {
 .wrap .banner h1 {
   text-shadow: 1px 1px 1px #2b3e79, 2px 2px 2px#2b3e79, 3px 3px 3px #2b3e79,
     4px 4px 4px #2b3e79;
-  font-size: 44px;
+  font-size: 48px;
   font-family: "inter";
   font-weight: 500;
   position: absolute;
@@ -99,7 +99,7 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 100px;
   margin-left: 150px;
   color: white;
 }
@@ -417,7 +417,7 @@ button {
 }
 
 .wrap_foreign .foreign .title h3 {
-  width: 1180px;
+  width: 220px;
   display: flex;
   font-size: 40px;
   color: black;
@@ -542,6 +542,7 @@ button {
   height: 64px;
   background-color: #2b3e79;
   display: flex;
+
   justify-content: center;
   align-items: center;
 }

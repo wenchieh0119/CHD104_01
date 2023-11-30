@@ -53,7 +53,7 @@ button {
   list-style-type: none;
   display: inline;
   margin: 0 6px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "inter";
   letter-spacing: 1px;
 }
@@ -101,7 +101,7 @@ button {
   justify-content: center;
   align-items: center;
   font-family: "inter";
-  text-shadow: 1px 1px #9f9f9f, 2px 2px #838383, 3px 3px #898989;
+  text-shadow: 1px 1px #9f9f9f, 2px 2px #838383, 3px 3px 3px #898989;
   color: rgb(0, 0, 0);
   letter-spacing: 10px;
 }
