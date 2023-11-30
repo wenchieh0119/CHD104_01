@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .main-header .logo {
@@ -52,7 +53,7 @@ button {
 .main-header nav ul li {
   list-style-type: none;
   display: inline;
-  margin: 0 10px;
+  margin: 0 8px;
   font-size: 24px;
   font-family: "inter";
 
@@ -69,6 +70,7 @@ button {
 }
 
 .wrap {
+  margin: auto;
   width: 100%;
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
@@ -76,6 +78,7 @@ button {
 }
 
 .wrap .banner {
+  margin: auto;
   position: relative;
   display: flex;
   width: 100%;
@@ -112,6 +115,7 @@ button {
 }
 
 .wrap .news {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
