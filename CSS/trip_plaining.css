@@ -68,6 +68,9 @@ button {
   color: rgb(255, 255, 255);
 }
 
+.banner {
+  margin-bottom: -3px;
+}
 .trip {
   display: flex;
   flex-direction: row;
@@ -76,68 +79,79 @@ button {
   margin-top: -3px;
 }
 
-.wrap .left {
-  width: 670px;
-  height: 1400px;
+.trip_plan {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.trip_plan_full .title {
+  background-color: #ffbf00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.trip_plan_full .title h1 {
+  font-size: 28px;
+  text-align: center;
+  font-family: "inter";
+  font-weight: 600;
+}
+
+.trip_plan_full .title p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "arial";
+  padding: 8px 0;
+  width: 350px;
+  margin-top: 10px;
+  background-color: #2b3e79;
+  color: white;
+  border-radius: 5px;
+}
+
+.trip_plan .trip {
+  width: 60%;
+  height: 100vh;
   background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 
-.wrap .left .top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 627px;
-  height: 200px;
-  margin-bottom: 40px;
-}
-.wrap .left .top .title {
-  font-size: 28px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 1.5px;
-  color: white;
-  font-family: "inter";
-  width: 360px;
-  height: 100px;
-  border-radius: 70px;
+.trip_plan .trip .top {
   background-color: #2b3e79;
-}
-.wrap .left .top .date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  width: 580px;
+  height: 55px;
   font-size: 24px;
-  line-height: 2;
-  font-family: "Saira Extra Condensed", sans-serif;
-  letter-spacing: 1px;
-  margin: 0;
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter";
   color: white;
-  background-color: #2b3e79;
+  border-radius: 5px;
 }
 
-.wrap .left .bottom {
-  width: 587px;
-  height: 313px;
+.trip .content {
+  width: 560px;
+  height: 240px;
   display: flex;
   background-color: #2b3e79;
   color: white;
   padding-left: 20px;
-  margin-top: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.wrap .left .bottom p {
+.trip .content p {
   padding: 16px;
   display: flex;
   align-items: center;
@@ -147,104 +161,112 @@ button {
   font-family: "inter";
 }
 
+.trip iframe {
+  padding-bottom: 10px;
+}
+
 .plan {
-  width: 630px;
-  height: 1400px;
+  width: 40%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #2b3e79;
+
+  padding-top: 20px;
+  padding-left: 100px;
 }
 
 .plan .date {
   font-family: "inter";
   display: flex;
-  width: 500px;
+  width: 380px;
   margin-bottom: 30px;
-  margin-left: -20px;
 }
 
 .card {
   position: relative;
-  width: 535px;
-  height: 210px;
+  width: 380px;
+  height: 150px;
   background-color: #ffbe00;
   font-family: "inter";
   display: flex;
   justify-content: space-around;
-  border-radius: 10px;
+  border-radius: 5px;
   position: relative;
 
   background-image: radial-gradient(
-      circle at 205px top,
+      circle at 120px top,
       #2b3e79,
-      #2b3e79 16px,
+      #2b3e79 14px,
       transparent 15px
     ),
     radial-gradient(
-      circle at 205px bottom,
+      circle at 120px bottom,
       #2b3e79,
-      #2b3e79 16px,
+      #2b3e79 14px,
       transparent 15px
     );
 }
 
 .card > .line {
   position: absolute;
-  left: 203px;
+  left: 120px;
   top: 12px;
   width: 4px;
-  height: 180px;
+  height: 120px;
   background-image: linear-gradient(
     to top,
     #ffffff 0%,
     #ffffff 50%,
     transparent 50%
   );
-  background-size: 4px 30px;
+  background-size: 2px 14px;
   background-repeat: repeat-y;
 }
 
 .card > .left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .card > .left .top {
-  width: 110px;
-  height: 30px;
-  border-radius: 50px;
+  width: 70px;
+  height: 28px;
+  border-radius: 5px;
   background-color: white;
-  font-size: 20px;
+  font-size: 16px;
   margin: 10px 0;
   display: flex;
   justify-content: center;
-  font-family: "Saira Extra Condensed", sans-serif;
+  font-family: "arial";
   align-items: center;
 }
 
 .card > .left .icon {
-  width: 90px;
-  width: 90px;
-}
-
-.card > .left .bottom {
-  font-family: "inter";
-  width: 110px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: white;
-  font-size: 20px;
-  margin: 10px 0;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  font-family: "Saira Extra Condensed", sans-serif;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+
+.card > .left .bottom {
+  width: 70px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  font-family: "arial";
+  align-items: center;
 }
 
 .card > .right {
@@ -255,12 +277,12 @@ button {
 }
 
 .card > .right .top {
-  border-radius: 50px;
-  width: 250px;
-  height: 40px;
+  border-radius: 5px;
+  width: 180px;
+  height: 60px;
   letter-spacing: 1.5px;
   background-color: white;
-  font-size: 20px;
+  font-size: 16px;
   margin: 16px 0;
   display: flex;
   justify-content: center;
@@ -280,30 +302,31 @@ button {
 }
 
 .card > .right .bottom {
-  width: 230px;
-  height: 80px;
-  border-radius: 10px;
+  width: 180px;
+  height: 60px;
+  border-radius: 5px;
   background-color: white;
   color: #a4a4a4;
-  font-size: 16px;
+  font-size: 14px;
   margin: 16px 0;
   display: flex;
   text-align: left;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
   font-family: "inter";
 }
+
 .time {
-  font-size: 20px;
-  margin: 20px 0;
+  font-size: 16px;
+  margin: 20px 140px;
   letter-spacing: 1px;
   color: white;
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
 .box {
-  width: 104px;
-  height: 104px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #ffbe00;
   border: #e4e4e4 2px solid;
@@ -313,23 +336,94 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0 6px;
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: 1.5px;
 }
 
-.btn {
-  width: 150px;
-  height: 60px;
-  font-size: 20px;
+.plan .btn {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffbe00;
+  background-color: #ffbf00;
   border: white 1px solid;
   border-radius: 50px;
-  margin-top: 50px;
-  letter-spacing: 1.5px;
+
+  margin-bottom: 20px;
+  letter-spacing: 1px;
   font-family: "inter";
+
+  padding: 10px 0;
+  margin-left: 130px;
+}
+
+.back-to-top {
+  /* 默認是隱藏的，這樣在第一屏才不顯示 */
+
+  position: fixed;
+  /* 位置是固定的 */
+
+  bottom: 50px;
+  /* 顯示在頁面底部 */
+
+  right: 50px;
+  /* 顯示在頁面的右邊 */
+
+  z-index: 99;
+  /* 確保不被其他功能覆蓋 */
+
+  border: 3px solid #ffbe00;
+  /* 顯示邊框 */
+
+  outline: none;
+  /* 不顯示外框 */
+
+  background-color: white;
+  /* 設置背景背景顏色 */
+
+  /* 設置文本顏色 */
+
+  cursor: pointer;
+  /* 滑鼠移到按鈕上顯示手型 */
+
+  padding: 15px;
+  /* 增加一些內邊距 */
+  font-family: "Saira Extra Condensed", sans-serif;
+
+  border-radius: 10px;
+  /* 增加圓角 */
+  width: 30px;
+  height: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 4px gray;
+  color: #000000;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.back-to-top:hover {
+  background-color: #ffbe00;
+  border-color: #fff;
+}
+
+.row {
+  height: 40vh;
+  margin-top: 10%;
+  width: 20px;
+  display: flex;
+  justify-content: right;
+
+  background-color: #2b3e79;
 }
 .back-to-top {
   /* 默認是隱藏的，這樣在第一屏才不顯示 */

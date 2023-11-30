@@ -85,7 +85,7 @@ button {
 .wrap .banner h1 {
   text-shadow: 1px 1px 1px #2b3e79, 2px 2px 2px#2b3e79, 3px 3px 3px #2b3e79,
     4px 4px 4px #2b3e79;
-  font-size: 48px;
+  font-size: 40px;
   font-family: "inter";
   font-weight: 500;
   position: absolute;
@@ -143,7 +143,7 @@ button {
 .wrap .news .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 64px;
   font-family: "inter";
@@ -172,7 +172,7 @@ button {
 }
 
 .wrap .news .title .path li a {
-  font-size: 32px;
+  font-size: 28px;
   width: 5px;
   letter-spacing: 1.5px;
   color: #000000;
@@ -304,7 +304,7 @@ button {
 .wrap_domestic .domestic .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 78px;
   background-color: #fff;
@@ -334,7 +334,7 @@ button {
 }
 
 .wrap_domestic .domestic .title .path li a {
-  font-size: 32px;
+  font-size: 28px;
   width: 5px;
   letter-spacing: 1px;
   color: #000000;
@@ -419,7 +419,7 @@ button {
 .wrap_foreign .foreign .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 78px;
   background-color: #fff;
@@ -443,7 +443,7 @@ button {
 }
 
 .wrap_foreign .foreign .title .path li a {
-  font-size: 32px;
+  font-size: 28px;
   width: 5px;
   letter-spacing: 1px;
   color: #000000;
@@ -550,7 +550,7 @@ button {
 .wrap_activity .activity_frontpage .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 78px;
   background-color: #f3f3f3;

@@ -92,7 +92,7 @@ button {
 
 .banner .title h1 {
   position: absolute;
-  font-size: 48px;
+  font-size: 40px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -118,7 +118,7 @@ button {
 .wrap .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 64px;
   background-color: white;
@@ -169,7 +169,7 @@ button {
   margin: 10px;
   padding: 0 10px;
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "inter";
   letter-spacing: 0.7px;
   line-height: 1.5;
@@ -185,6 +185,7 @@ button {
   font-weight: 500;
   padding: 0;
   margin: 0;
+  font-weight: 600;
 }
 .journey {
   display: flex;
@@ -206,7 +207,7 @@ button {
 .journey .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 64px;
   font-family: "inter";
@@ -274,7 +275,7 @@ button {
   padding: 10px;
   padding: 0 10px;
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "inter";
   letter-spacing: 0.7px;
   line-height: 1.5;
@@ -286,7 +287,7 @@ button {
   font-size: 20px;
   text-align: center;
   letter-spacing: 1.5px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0;
   margin: 0;
 }
@@ -311,7 +312,7 @@ button {
 .wrap_food .food .title h3 {
   width: 220px;
   display: flex;
-  font-size: 40px;
+  font-size: 36px;
   color: black;
   line-height: 64px;
   background-color: white;
@@ -349,8 +350,7 @@ button {
 
 .wrap_food .food .card .item h4 {
   background-color: #ffbe00;
-
-  font-size: 24px;
+  font-size: 20px;
   line-height: 64px;
   width: 280px;
   height: 60px;
@@ -363,7 +363,7 @@ button {
   margin: 0;
   color: rgb(0, 0, 0);
   font-family: "inter";
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .news_bottom {
@@ -448,6 +448,7 @@ button {
 .news_bottom .item h3 {
   font-size: 16px;
   font-family: "inter";
+  font-weight: 500;
 }
 
 .news_bottom .item p {
