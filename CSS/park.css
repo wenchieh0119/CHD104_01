@@ -197,8 +197,8 @@ button {
 }
 
 .hotview_park .title {
-  width: 1140px;
-  height: 80px;
+  width: 900px;
+  height: 70px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -209,27 +209,28 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+
   font-family: "inter";
 }
 
 .hotview_park .card {
   display: flex;
   flex-direction: row;
-  width: 1140px;
-  height: 600px;
+  width: 900px;
+  height: 500px;
+
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 .hotview_park .word {
-  width: 360px;
-  height: 50px;
+  margin-top: -25px;
+  width: 280px;
+  height: 40px;
   text-align: center;
   color: #ffffff;
-  font-size: 20px;
-  padding-top: 25px;
+  font-size: 18px;
+  padding-top: 20px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -239,19 +240,31 @@ button {
 
 .hotview_park .word:hover .hover {
   display: block;
-  width: 300px;
-  height: 60px;
-  border: black solid 1px;
+  width: 260px;
+  height: 80px;
+  padding: 10px;
+  /* border: black solid 1px; */
+
+  color: #000000;
+}
+.hotview_park .word:hover {
+  background-color: rgb(239, 239, 239);
+  color: rgb(0, 0, 0);
+
+  background-image: none;
+
+  width: 280px;
+  height: 160px;
 }
 
 .hotview_park .hover {
-  margin: 40px 0;
+  margin: 25px 0;
   display: none;
 
   width: 300px;
   height: 80px;
-  font-size: 18px;
-  padding: 30px;
+  font-size: 16px;
+
   text-align: left;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -270,7 +283,7 @@ button {
   text-align: center;
   display: inline-block;
   color: black;
-  margin: 50px 0;
+  margin-top: 20px;
   opacity: 0.8;
   border-radius: 30px;
   transition: 0.6s ease-in;
@@ -335,6 +348,7 @@ button {
   border-color: #fff;
 }
 .footer .wrap {
+  margin-top: 50px;
   display: flex;
   background-color: #9d8521;
   width: 100%;
