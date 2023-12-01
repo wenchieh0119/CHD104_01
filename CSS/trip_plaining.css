@@ -81,8 +81,6 @@ button {
 }
 
 .trip_plan {
-  width: 100%;
-  height: 100vh;
   display: flex;
   overflow: hidden;
 }
@@ -128,8 +126,8 @@ button {
 
 .trip_plan .trip .top {
   background-color: #2b3e79;
-  width: 580px;
-  height: 55px;
+  width: 86%;
+  height: 10%;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -140,8 +138,8 @@ button {
 }
 
 .trip .content {
-  width: 560px;
-  height: 240px;
+  width: 83%;
+  height: 40%;
   display: flex;
   background-color: #2b3e79;
   color: white;
@@ -152,18 +150,24 @@ button {
   align-items: center;
 }
 
+.trip .content img {
+  width: 50%;
+}
+
 .trip .content p {
-  padding: 16px;
+  padding: 4%;
   display: flex;
   align-items: center;
   line-height: 1.5;
-  letter-spacing: 2px;
-
+  letter-spacing: 1.5px;
+  font-size: 16px;
   font-family: "inter";
 }
 
 .trip iframe {
   padding-bottom: 10px;
+  width: 86%;
+  height: 40%;
 }
 
 .plan {
@@ -426,6 +430,17 @@ button {
 
   background-color: #2b3e79;
 }
+
+.back-to-top a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.back-to-top:hover {
+  background-color: #ffbe00;
+  border-color: #fff;
+}
+
 .footer .wrap {
   display: flex;
   background-color: #9d8521;
