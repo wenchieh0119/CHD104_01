@@ -73,7 +73,7 @@ button {
   width: 100%;
 
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -151,7 +151,7 @@ button {
   font-family: "inter";
   font-weight: 600;
   background-color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   justify-content: center;
   align-items: center;
@@ -167,7 +167,7 @@ button {
 
   text-align: center;
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-left: 70px;
   padding: 0;
@@ -278,7 +278,7 @@ button {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -310,7 +310,7 @@ button {
   color: black;
   line-height: 78px;
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   justify-content: center;
   align-items: center;
@@ -324,7 +324,7 @@ button {
   flex-direction: row;
 
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-left: 70px;
   padding: 0;
@@ -393,7 +393,7 @@ button {
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -424,7 +424,7 @@ button {
   color: black;
   line-height: 78px;
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   justify-content: center;
   align-items: center;
@@ -437,7 +437,7 @@ button {
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); */
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin-left: 70px;
   padding: 0;
@@ -496,18 +496,14 @@ button {
 }
 
 .wrap_activity {
-  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .wrap_activity .activity_frontpage {
-  height: 750px;
+  height: 650px;
   width: 100%;
   padding-bottom: 100px;
   display: flex;
@@ -534,8 +530,6 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  margin-top: 50px;
 }
 
 .wrap_activity .activity_frontpage .title_h3 {
@@ -553,7 +547,7 @@ button {
   display: flex;
   font-size: 36px;
   color: black;
-  line-height: 78px;
+  line-height: 70px;
   background-color: #f3f3f3;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -566,17 +560,17 @@ button {
 }
 
 .wrap_activity .activity_frontpage .content .top {
-  height: 270px;
+  height: 200px;
 }
 
 .wrap_activity .activity_frontpage .content .middle {
-  width: 980px;
+  width: 780px;
   display: flex;
   justify-content: space-around;
 }
 
 .wrap_activity .activity_frontpage .content .down {
-  height: 270px;
+  height: 200px;
 }
 
 .wrap_activity .activity_frontpage .content .item {
@@ -596,7 +590,7 @@ button {
 }
 
 .wrap_activity .activity_frontpage .content .item h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bolder;
   position: absolute;
   color: rgb(0, 0, 0);
