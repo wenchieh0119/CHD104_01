@@ -215,28 +215,35 @@ button {
   font-weight: 600;
 }
 
-@media only screen and(max-width:767px) {
-  .card {
-    width: 100%;
+@media only screen and (max-width: 767px) {
+  .gnav .container li a {
+    font-size: 16px;
   }
-}
-@media only screen and(max-width:767px) {
   .content .item {
     width: 50%;
     margin: 0 auto;
   }
-}
-@media only screen and(min-width:768px) {
-  .card {
-    width: 100%;
+  .banner .title h1 {
+    font-size: 24px;
+  }
+  .wrap h3 {
+    font-size: 20px;
+  }
+  .wrap p {
+    font-size: 14px;
+  }
+
+  .new .path li a {
+    font-size: 16px;
+  }
+  .news .path li a {
+    font-size: 16px;
+  }
+  .news p {
+    font-size: 14px;
   }
 }
-@media only screen and(min-width:768px) {
-  .content .item {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
+
 .news {
   max-width: 1200px;
   width: 100%;
