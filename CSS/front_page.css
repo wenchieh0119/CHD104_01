@@ -1,4 +1,4 @@
-.main-header {
+.header .container {
   background-color: #ffbe00;
   background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
   width: 100%;
@@ -9,20 +9,20 @@
   margin: auto;
 }
 
-.main-header .logo {
+.header .header-logo {
   vertical-align: top;
   display: flex;
   margin: 40px;
   align-items: center;
 }
 
-.main-header .navSearch {
+.header .navSearch {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
-.main-header .navSearch input,
+.header .navSearch input,
 button {
   border: none;
   outline: none;
@@ -30,27 +30,27 @@ button {
   background-color: #ffffff;
 }
 
-.main-header .navSearch input {
+.header .navSearch input {
   padding-left: 20px;
   width: 70%;
   border-radius: 100px 0 0 100px;
 }
 
-.main-header .navSearch button {
+.header .navSearch button {
   width: 20%;
   border-radius: 0 100px 100px 0;
   cursor: pointer;
 }
 
-.main-header nav {
+.header .gnav {
   margin: 40px;
 }
 
-.main-header nav ul {
+.header .gnav ul {
   padding: 2px;
 }
 
-.main-header nav ul li {
+.header .gnav ul li {
   list-style-type: none;
   display: inline;
   margin: 0 6px;
@@ -60,12 +60,12 @@ button {
   letter-spacing: 1px;
 }
 
-.main-header nav ul li a {
+.header .gnav ul li a {
   color: #000000;
   text-decoration: none;
 }
 
-.main-header nav ul li a:hover {
+.header .gnav ul li a:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -75,35 +75,38 @@ button {
 
 .wrap .banner {
   position: relative;
-  display: flex;
-  width: 100%;
-  height: 90vh;
+  margin-bottom: 50px;
+  height: 85%;
 }
 
-.wrap .banner .word {
+.wrap .banner .title {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 90vh;
-  background-color: #00000062;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.311);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .title h1 {
+  color: white;
   font-size: 36px;
   font-family: "inter";
   font-weight: 500;
-  position: absolute;
-
   letter-spacing: 4px;
-  line-height: 1.6;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  color: white;
+  text-align: center;
 }
 
 .wrap .banner img {
   width: 100%;
 }
 
-.wrap .news {
+.wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,14 +114,13 @@ button {
 }
 
 .title {
-  width: 1180px;
-  justify-content: left;
+  display: flex;
+  justify-content: center;
   text-align: center;
   line-height: 44px;
-  display: flex;
+
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 .title .title_h3 {
@@ -176,109 +178,91 @@ button {
   color: gray;
 }
 
-.wrap .news .card .item_top {
+.new {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.new .card {
   display: flex;
-  font-display: row;
-  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 
-  width: 1180px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.wrap .news .card .item_top .item {
+.new .card .item {
   position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-.wrap .news .card .item_top .item .up {
-  position: absolute;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-}
-
-.wrap .news .card .item_down .item .up {
-  position: absolute;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-}
-
-.wrap .news .card .item_top .item p {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "inter";
-  color: white;
-  letter-spacing: 1.5px;
-  padding: 24px;
-  text-shadow: 1px 1px #4e4e4e, 2px 2px #4e4e4e;
-}
-
-.wrap .news .card .item_down {
-  display: flex;
-  font-display: row;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-  width: 1180px;
-}
-
-.wrap .news .card .item_down .item {
-  position: relative;
-}
-
-.wrap .news .card .item_down .item p {
-  position: absolute;
-  top: 0;
-  right: 0;
+.new .card .item .word {
   bottom: 0;
   left: 0;
   padding: 20px;
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "inter";
-  color: white;
-  letter-spacing: 1.5px;
-  padding: 24px;
-  text-shadow: 1px 1px #4e4e4e, 2px 2px #4e4e4e;
-}
-
-.wrap_domestic .domestic {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  position: absolute;
+  font-size: 20px;
+  font-family: "inter";
+  color: white;
+  font-weight: 600;
 }
 
-.wrap_domestic .domestic .card {
-  display: flex;
-  font-display: row;
-  width: 1180px;
+@media only screen and(max-width:767px) {
+  .card {
+    width: 100%;
+  }
+}
+@media only screen and(max-width:767px) {
+  .content .item {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media only screen and(min-width:768px) {
+  .card {
+    width: 100%;
+  }
+}
+@media only screen and(min-width:768px) {
+  .content .item {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.news {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+.news .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+
+  box-sizing: border-box;
 }
 
-.wrap_domestic .domestic .card .item {
+.news .card .item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-.wrap_domestic .domestic .card .item p {
+.news .card .item p {
   background-color: #ffbe00;
   font-size: 20px;
-
   line-height: 64px;
   letter-spacing: 1px;
   width: 280px;
@@ -294,25 +278,34 @@ button {
   font-family: "inter";
   letter-spacing: 1.5px;
 }
-
-.wrap_activity .activity_frontpage {
+.activity {
+  max-width: 1200px;
   width: 100%;
-  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.activity .frontpage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-.wrap_activity .activity_frontpage .content {
+.activity .frontpage .content {
   display: flex;
-  width: 1160px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.wrap_activity .activity_frontpage .content .item {
+.activity .frontpage .content .item {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -324,11 +317,11 @@ button {
   border-radius: 50%;
 }
 
-.wrap_activity .activity_frontpage .content .item img {
+.activity .frontpage .content .item img {
   border-radius: 50%;
 }
 
-.wrap_activity .activity_frontpage .content .item h3 {
+.activity .frontpage .content .item h3 {
   font-size: 28px;
   font-weight: bolder;
   position: absolute;
@@ -346,11 +339,11 @@ button {
   text-shadow: 1px 1px #eeeeee, 3px 3px 3px #eeeeee;
 }
 
-.wrap_bottom {
+.bottom {
   background-color: #224641;
 }
 
-.wrap_bottom .card {
+.bottom .card {
   width: 100%;
   height: 230px;
   display: flex;
@@ -359,7 +352,7 @@ button {
   align-items: center;
 }
 
-.wrap_bottom .card .item {
+.bottom .card .item {
   display: inline-block;
   white-space: normal;
   word-break: break-all;
@@ -376,7 +369,7 @@ button {
   padding: 0 10px;
 }
 
-.wrap_bottom .box {
+.bottom .box {
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -385,7 +378,7 @@ button {
   align-items: center;
 }
 
-.wrap_bottom .box p {
+.bottom .box p {
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
@@ -396,7 +389,7 @@ button {
   font-family: "inter";
 }
 
-.wrap_bottom .word {
+.bottom .word {
   width: 320px;
   height: 130px;
   display: flex;
@@ -409,7 +402,7 @@ button {
   color: #ffffff;
 }
 
-.wrap_bottom .word h4 {
+.bottom .word h4 {
   font-size: 20px;
   text-align: left;
   letter-spacing: 1px;
@@ -417,7 +410,7 @@ button {
   font-family: "inter";
 }
 
-.wrap_bottom .word p {
+.bottom .word p {
   font-size: 16px;
   text-align: left;
   line-height: 1.5;
@@ -521,7 +514,7 @@ button {
   margin-top: -96px;
 }
 
-.footer .wrap .bottom {
+.footer .wrap .footer-bottom {
   font-size: 12px;
   text-align: center;
   margin-top: 50px;

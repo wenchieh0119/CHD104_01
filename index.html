@@ -11,18 +11,20 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="logo">
+    <header class="header">
+        <div class="container">
+        <div class="header-logo">
             <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="50px" width="110px"
                     alt="網站名稱"></a>
+        </div>
 
             <div class="navSearch">
                 <input type="search" placeholder="想去哪裡呢?...." />
                 <button><img src="./img/front/search.png" alt="" height="25px" width="25px"></i></button>
             </div>
 
-            <nav>
-                <ul>
+            <nav class="gnav">
+                <ul class="container">
                     <li><a href="news.html">旅遊情報</a></li>
                     <li><a href="explore_itinerary.html">探索行程</a></li>
                     <li> <a href="activity.html">熱門活動</a></li>
@@ -30,20 +32,26 @@
                     <li><a href="#">會員中心</a></li>
                 </ul>
             </nav>
+
+            </div>
     </header>
 
 
 
-    <div class="wrap">
-        <div class="banner"> 
-             <img src="./img/front/top.jpg">
-            <div class="word"> 
-              
-            <h1>探險規劃，冒險就是生活的調味劑，一同開啟無盡的旅程!</h1>
+    <main class="wrap">
+    
+            <div class="banner"> 
+<div class="title"> 
+            
+                        <h1>探險規劃，冒險就是生活的調味劑，一同開啟無盡的旅程!</h1>
+                    </div>  
+                
+                <img src="./img/front/top.jpg">
+
+        
             </div>
-           
-        </div>
-        <div class="news">
+        
+        <section class="new">
             <div class="title">
                 <div class="title_h3">
                     <h3>旅遊情報</h3>
@@ -56,74 +64,72 @@
                 </ul>
             </div>
             <div class="card">
-                <div class="item_top">
+                
                     <div class="item">
-                        <div class="up"></div>
-                        <a href="#">
-                            <img src="./img/front/pic01.png" height="380px" width="380px" alt="">
+                
+                        <div class="word"><p>台東‧熱氣球嘉年華</p></div>
+                            <img src="./img/front/pic01.png" height="380px" width="380px" alt="">  
+                        
 
-                            <p>台東‧熱氣球嘉年華</p>
-                        </a>
+                            
+                    
                     </div>
 
                     <div class="item">
-                        <div class="up"></div>
-                        <a href="">
+                        <div class="word"><p>澎湖‧花火節</p></div>
+                    
                             <img src="./img/front/pic02.png" height="380px" width="380px" alt="">
-                            <p>澎湖‧花火節</p>
-                        </a>
+                            
+                    
+                    
                     </div>
 
                     <div class="item">
-                        <div class="up"></div>
-                        <a href="">
-                            <img src="./img/front/pic03.png" height="380px" width="380px" alt="">
-                            <p>蘭嶼‧飛魚祭</p>
-                        </a>
+            
+                        <div class="word"><p>蘭嶼‧飛魚祭</p></div>
+                            <img src="./img/front/pic03.png" height="380px" width="380px" alt=""> 
+                        
+                            
+                    
                     </div>
-                </div>
+    
 
-                <div class="item_down">
+                
 
                     <div class="item">
-                        <a href="">
-                            <div class="up"></div>
+                        <div class="word"> <p>高雄‧一日遊</p></div>
+
+
                             <img src="./img/front/pic1-1.png" height="280px" width="280px" alt="">
-                            <p>高雄‧一日遊</p>
-                        </a>
+
+                    
                     </div>
 
                     <div class="item">
-                        <div class="up"></div>
-                        <a href="">
+                        <div class="word"> <p>法國‧必玩行程</p></div>
                             <img src="./img/front/pic1-2.png" height="280px" width="280px" alt="">
-                            <p>法國‧必玩行程</p>
-                        </a>
+                        
+                    
                     </div>
 
                     <div class="item">
 
-                        <div class="up"></div>
-                        <a href="">
+                        <div class="word"><p>韓國‧必去景點</p></div> 
+                    
                             <img src="./img/front/pic1-3.png" height="280px" width="280px" alt="">
-                            <p>韓國‧必去景點</p>
-                        </a>
+                        
+                    
                     </div>
 
-                    <div class="item">
-
-                        <div class="up"></div>
-                        <a href="">
+                    <div class="item"> 
+                        <div class="word"><p>日本‧櫻花祭</p></div>  
                             <img src="./img/front/pic1-4.png" height="280px" width="280px" alt="">
-                            <p>日本‧櫻花祭</p>
-                        </a>
-                    </div>
-                </div>
+                        
+            
+                    </div>        
             </div>
 
-        </div>
-
-    </div>
+        </section>    
 
 
 
@@ -131,14 +137,15 @@
 
 
 
-    <div class="wrap_domestic">
+    
 
-        <div class="domestic">
+        <section class="news">
             <div class="title">
 
                 <div class="title_h3">
                     <h3>國內旅遊</h3>
                 </div>
+          
 
 
                 <ul class="path">
@@ -173,24 +180,24 @@
 
             </div>
 
-        </div>
+        </section>
 
-    </div>
-
-
+ 
 
 
 
 
-    <div class="wrap_domestic">
 
-        <div class="domestic">
+
+  
+
+        <section class="news">
             <div class="title">
                 <div class="title_h3">
                     <h3>國外旅遊</h3>
                 </div>
 
-
+         
                 <ul class="path">
                     <li><a href="#">超夯行程 </a></li>
                     <li><a href="#">亞洲精選</a></li>
@@ -222,9 +229,7 @@
 
             </div>
 
-        </div>
-
-    </div>
+        </section>
 
 
 
@@ -240,9 +245,10 @@
 
 
 
-    <div class="wrap_activity">
 
-        <div class="activity_frontpage">
+    <div class="activity">
+
+        <div class="frontpage">
             <div class="title">
                 <div class="title_h3">
                     <h3>熱門活動</h3>
@@ -253,7 +259,7 @@
 
 
 
-             
+            
                     <div class="item">
                         <a href="activity.html">
                             <h3>美食品嘗</h3>
@@ -261,7 +267,7 @@
 
                         <img src="./img/front/pic4-1.png" alt="美食品嘗"  height="250px" width="250px">
                     </div>
-          
+        
 
         
                     <div class="item">
@@ -303,7 +309,7 @@
 
 
 
-    <div class="wrap_bottom">
+    <div class="bottom">
 
         <marquee direction="left" scrollamount="10" animation-iteration-count="infinite" ；>
 
@@ -460,7 +466,7 @@
 
     <a href="#" class="back-to-top" style=" text-decoration:none">TOP</a>
 
-
+    </main>
 
 
 
@@ -492,7 +498,7 @@
                     </ul>
 
                 </nav>
-                <div class="bottom">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</div>
+                <div class="footer-bottom">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</div>
             </div>
             <div class="icon">
                 <a href="#"> <img src="./img/front/ig.png" height="30px" width="30px" alt="instragm"></a>

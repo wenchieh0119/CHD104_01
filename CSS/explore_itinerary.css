@@ -1,91 +1,137 @@
-.main-header {
+.header .container {
   background-color: #ffbe00;
   background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
   width: 100%;
-  height: 100px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
-.main-header .logo {
+.header .header-logo {
   vertical-align: top;
   display: flex;
   margin: 40px;
   align-items: center;
 }
 
-.main-header .navSearch {
+.header .navSearch {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
-.main-header .navSearch input,
+.header .navSearch input,
 button {
   border: none;
   outline: none;
-  height: 50px;
+  height: 40px;
   background-color: #ffffff;
 }
 
-.main-header .navSearch input {
+.header .navSearch input {
   padding-left: 20px;
-  width: 80%;
+  width: 70%;
   border-radius: 100px 0 0 100px;
 }
 
-.main-header .navSearch button {
+.header .navSearch button {
   width: 20%;
   border-radius: 0 100px 100px 0;
   cursor: pointer;
 }
 
-.main-header nav {
+.header .gnav {
   margin: 40px;
 }
 
-.main-header nav ul {
+.header .gnav ul {
   padding: 2px;
 }
 
-.main-header nav ul li {
+.header .gnav ul li {
   list-style-type: none;
   display: inline;
   margin: 0 6px;
   font-size: 20px;
   font-family: "inter";
+
   letter-spacing: 1px;
 }
 
-.main-header nav ul li a {
+.header .gnav ul li a {
   color: #000000;
   text-decoration: none;
 }
 
-.main-header nav ul li a:hover {
+.header .gnav ul li a:hover {
   color: rgb(255, 255, 255);
 }
 
-.wrap .title {
-  font-size: 24px;
-  letter-spacing: 1.5px;
-  width: 1200px;
-  margin: 40px 0;
-  height: 65px;
-  font-weight: 600;
+.title {
+  justify-content: left;
   text-align: center;
-  font-family: "inter";
+  line-height: 44px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ffbe00;
 }
 
+.title .title_h3 {
+  width: 180px;
+  height: 44px;
+  background-color: #2b3e79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  width: 140px;
+  display: flex;
+  font-size: 28px;
+  color: black;
+  font-family: "inter";
+  font-weight: 600;
+  background-color: white;
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
+.title .path {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 8%;
+
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title .path li a {
+  font-size: 24px;
+  font-weight: 600;
+  width: 5px;
+  letter-spacing: 1.5px;
+  color: #000000;
+  border-right: #000000 solid 2px;
+  padding: 0 5px;
+  font-family: "inter";
+  text-decoration: none;
+}
+
+.title .path .noline a {
+  border: none;
+}
+
+.title .path li :hover {
+  color: gray;
+}
 .wrap {
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -100,7 +146,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin-bottom: 50px;
 }
 .banner {
   position: relative;
@@ -131,38 +177,6 @@ button {
   text-shadow: 1px 1px #9f9f9f, 2px 2px #838383, 3px 3px 3px #898989;
   color: rgb(0, 0, 0);
   letter-spacing: 10px;
-}
-
-.button_page {
-  width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.button_page button {
-  background: #ffbe00;
-  width: 240px;
-  height: 60px;
-  font-size: 28px;
-  letter-spacing: 1px;
-  font-family: "inter";
-  font-weight: 600;
-  text-align: center;
-  display: inline-block;
-  color: black;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.button_page button:hover {
-  background-color: #2b3e79;
-
-  color: #ffffff;
 }
 
 .card {
@@ -218,7 +232,7 @@ button {
 .wrap .btn button {
   height: 60px;
   width: 148px;
-  font-size: 20px;
+  font-size: 16px;
   background: transparent;
   border: 2px solid #ffbe00;
   font-family: "Saira Extra Condensed", sans-serif;
@@ -237,7 +251,7 @@ button {
 
 .wrap .btn button:hover {
   opacity: 1;
-  font-size: 20px;
+
   cursor: pointer;
   background-color: #ffbe00;
   height: 60px;

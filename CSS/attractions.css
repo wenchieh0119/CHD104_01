@@ -1,55 +1,56 @@
-.main-header {
+.header .container {
   background-color: #ffbe00;
   background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
   width: 100%;
-  height: 100px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
-.main-header .logo {
+.header .header-logo {
   vertical-align: top;
   display: flex;
   margin: 40px;
   align-items: center;
 }
 
-.main-header .navSearch {
+.header .navSearch {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
-.main-header .navSearch input,
+.header .navSearch input,
 button {
   border: none;
   outline: none;
-  height: 50px;
+  height: 40px;
   background-color: #ffffff;
 }
 
-.main-header .navSearch input {
+.header .navSearch input {
   padding-left: 20px;
-  width: 80%;
+  width: 70%;
   border-radius: 100px 0 0 100px;
 }
 
-.main-header .navSearch button {
+.header .navSearch button {
   width: 20%;
   border-radius: 0 100px 100px 0;
   cursor: pointer;
 }
 
-.main-header nav {
+.header .gnav {
   margin: 40px;
 }
 
-.main-header nav ul {
+.header .gnav ul {
   padding: 2px;
 }
 
-.main-header nav ul li {
+.header .gnav ul li {
   list-style-type: none;
   display: inline;
   margin: 0 6px;
@@ -59,12 +60,12 @@ button {
   letter-spacing: 1px;
 }
 
-.main-header nav ul li a {
+.header .gnav ul li a {
   color: #000000;
   text-decoration: none;
 }
 
-.main-header nav ul li a:hover {
+.header .gnav ul li a:hover {
   color: rgb(255, 255, 255);
 }
 
@@ -125,9 +126,6 @@ button {
   font-family: "inter";
 }
 .top_btn ul {
-  background-color: #2b3e79;
-  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,14 +135,13 @@ button {
 
 .top_btn ul li {
   font-size: 24px;
-  color: #2b3e79;
+
   list-style-type: none;
   margin: 0 10px;
   width: 180px;
   height: 80px;
-  background-color: #2b3e79;
-  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+  color: #000;
   border: none;
   font-family: "inter";
   text-align: center;
@@ -154,14 +151,13 @@ button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  border: #ffbe00 solid 1px;
+  border: #ffbe00 solid 2px;
   padding-left: 10px;
 }
 
 .top_btn ul li:hover {
   background-color: #ffc800;
-  background-image: url("https://www.transparenttextures.com/patterns/leather.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
   color: rgb(0, 0, 0);
 }
 
@@ -170,22 +166,55 @@ button {
 }
 
 .top_btn ul li a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 .top_btn ul li span {
-  font-size: 32px;
+  font-size: 28px;
   background-color: white;
+  border: #ffbe00 solid 2px;
   text-align: center;
   color: #000000;
   padding: 12px;
-  border-radius: 50%;
+  border-radius: 100px;
   overflow: hidden;
   margin: 10px;
 }
 
-.hotview_wrap {
+.title {
+  justify-content: center;
+  text-align: center;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title .title_h3 {
+  width: 200px;
+  height: 44px;
+  background-color: #2b3e79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  width: 160px;
+  display: flex;
+  font-size: 28px;
+  color: black;
+  font-family: "inter";
+  font-weight: 600;
+  background-color: white;
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+.wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -194,27 +223,7 @@ button {
   flex-wrap: wrap;
 }
 
-.hotview_wrap .title {
-  width: 1200px;
-  height: 80px;
-  background-color: #ffc800;
-  background-image: url("https://www.transparenttextures.com/patterns/leather.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-}
-
-.hotview_wrap .title h2 {
-  font-size: 28px;
-
-  letter-spacing: 2px;
-  text-align: center;
-  font-family: "inter";
-}
-
-.hotview_wrap .card {
+.card {
   width: 1200px;
   height: 1180px;
   display: flex;
@@ -225,13 +234,13 @@ button {
   align-content: space-around;
 }
 
-.hotview_wrap .card .item {
+.card .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.hotview_wrap .card .item .word {
+.card .item .word {
   width: 375px;
   height: 505px;
   background-color: #00000067;
@@ -244,7 +253,7 @@ button {
   position: absolute;
 }
 
-.hotview_wrap .card .item .word h3 {
+.card .item .word h3 {
   font-size: 24px;
   margin: 0;
   text-align: center;
@@ -253,8 +262,7 @@ button {
   font-family: "inter";
   font-weight: 600;
 }
-
-.hotview_wrap .card .item .word p {
+.card .item .word p {
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -263,7 +271,7 @@ button {
   color: white;
 }
 
-.hotview_wrap .btn button {
+.btn button {
   height: 60px;
   width: 148px;
   font-size: 20px;
@@ -282,7 +290,7 @@ button {
   transition: 0.6s ease-in;
   position: relative;
 }
-.hotview_wrap .btn button:hover {
+.btn button:hover {
   opacity: 1;
   font-size: 20px;
   cursor: pointer;
@@ -293,116 +301,6 @@ button {
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
-.view_wrap {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.view_wrap .title {
-  width: 1200px;
-  height: 80px;
-  background-color: #2b3e79;
-  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-  color: white;
-}
-
-.view_wrap .title h2 {
-  font-size: 32px;
-  letter-spacing: 2px;
-  text-align: center;
-  font-family: "inter";
-}
-
-.view_wrap .card {
-  width: 1200px;
-  height: 1180px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  padding: 20px 10px;
-}
-
-.view_wrap .card .item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.view_wrap .card .item .word {
-  width: 375px;
-  height: 505px;
-  background-color: #00000067;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5px;
-
-  position: absolute;
-}
-
-.view_wrap .card .item .word h3 {
-  font-size: 24px;
-  margin: 0;
-  text-align: center;
-  letter-spacing: 4px;
-  color: white;
-  font-family: "inter";
-  font-weight: 600;
-}
-
-.view_wrap .card .item .word p {
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: left;
-  margin: 20px 20px;
-  color: white;
-}
-
-.view_wrap .btn button {
-  height: 60px;
-  width: 148px;
-  font-size: 20px;
-  background: transparent;
-  border: 2px solid #2b3e79;
-  font-family: "Saira Extra Condensed", sans-serif;
-  letter-spacing: 0.7px;
-  font-weight: 500;
-  text-align: center;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  margin: 50px 0;
-  opacity: 0.8;
-  border-radius: 30px;
-  transition: 0.6s ease-in;
-  position: relative;
-}
-
-.view_wrap .btn button:hover {
-  opacity: 1;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #2b3e79;
-  color: white;
-  height: 60px;
-  width: 148px;
-  border-radius: 10px;
-  font-family: "Saira Extra Condensed", sans-serif;
-}
 .back-to-top {
   /* 默認是隱藏的，這樣在第一屏才不顯示 */
 
