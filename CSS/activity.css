@@ -46,10 +46,6 @@ button {
   margin: 40px;
 }
 
-.header .gnav ul {
-  padding: 2px;
-}
-
 .header .gnav ul li {
   list-style-type: none;
   display: inline;
@@ -116,7 +112,7 @@ button {
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 100px;
+  height: 80px;
   color: white;
   text-align: center;
   display: flex;
@@ -127,26 +123,22 @@ button {
   font-family: "inter";
 }
 .top_btn ul {
-  background-color: #2b3e79;
-  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .top_btn ul li {
-  font-size: 24px;
+  font-size: 20px;
   color: #2b3e79;
   list-style-type: none;
   margin: 0 10px;
-  width: 180px;
-  height: 80px;
+  width: 150px;
+  height: 70px;
   background-color: #2b3e79;
-  background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
   border: none;
   font-family: "inter";
   text-align: center;
@@ -156,7 +148,7 @@ button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  border: #ffbe00 solid 1px;
+
   padding-left: 10px;
 }
 
@@ -175,14 +167,48 @@ button {
 }
 
 .top_btn ul li span {
-  margin: 10px;
-  font-size: 32px;
+  font-size: 24px;
   background-color: white;
   text-align: center;
   color: #000000;
-  padding: 12px;
+  padding: 8px 10px;
   border-radius: 50%;
   overflow: hidden;
+  font-family: "inter";
+  margin: 10px;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title .title_h3 {
+  width: 200px;
+  height: 44px;
+  background-color: #2b3e79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  width: 160px;
+  display: flex;
+  font-size: 28px;
+  color: black;
+  font-family: "inter";
+  font-weight: 600;
+  background-color: white;
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
 }
 
 .card {
@@ -198,13 +224,12 @@ button {
   display: flex;
   flex-direction: row;
   color: black;
-  width: 800px;
+  width: 1130px;
   height: 340px;
-  padding: 10px 20px;
-  margin-top: 50px;
+  padding-left: 40px;
+  margin-bottom: 30px;
   align-items: center;
   border: rgb(181, 181, 181) solid 1px;
-  box-shadow: 4px 4px 4px 4px gray;
 }
 
 .card .item .word {

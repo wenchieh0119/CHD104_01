@@ -46,10 +46,6 @@ button {
   margin: 40px;
 }
 
-.header .gnav ul {
-  padding: 2px;
-}
-
 .header .gnav ul li {
   list-style-type: none;
   display: inline;
@@ -71,51 +67,50 @@ button {
 
 .banner {
   display: flex;
-  width: 100%;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
 }
-.banner .title {
-  position: relative;
-
-  padding: 0;
-
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .banner img {
   width: 100%;
 }
 
-.banner .title h2 {
+.banner .title {
   position: absolute;
-  font-size: 40px;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.311);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  color: white;
-  letter-spacing: 10px;
-  text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
-  font-family: "inter";
 }
 
-.banner h1 {
+.banner .title h2 {
+  color: white;
+  font-size: 36px;
+  font-family: "inter";
+  font-weight: 500;
+  letter-spacing: 4px;
+
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.container h1 {
   font-size: 40px;
   width: 100%;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 100px;
+  height: 80px;
   color: white;
   text-align: center;
   display: flex;
@@ -130,18 +125,18 @@ button {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .top_btn ul li {
-  font-size: 24px;
-
+  font-size: 20px;
+  color: #2b3e79;
   list-style-type: none;
   margin: 0 10px;
-  width: 180px;
-  height: 80px;
+  width: 150px;
+  height: 70px;
+  background-color: #2b3e79;
 
-  color: #000;
   border: none;
   font-family: "inter";
   text-align: center;
@@ -151,13 +146,12 @@ button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  border: #ffbe00 solid 2px;
+
   padding-left: 10px;
 }
 
 .top_btn ul li:hover {
-  background-color: #ffc800;
-
+  background-color: #ffbe00;
   color: rgb(0, 0, 0);
 }
 
@@ -166,19 +160,19 @@ button {
 }
 
 .top_btn ul li a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .top_btn ul li span {
-  font-size: 28px;
+  font-size: 24px;
   background-color: white;
-  border: #ffbe00 solid 2px;
   text-align: center;
   color: #000000;
-  padding: 12px;
-  border-radius: 100px;
+  padding: 8px 10px;
+  border-radius: 50%;
   overflow: hidden;
+  font-family: "inter";
   margin: 10px;
 }
 
@@ -225,7 +219,7 @@ button {
 
 .card {
   width: 1200px;
-  height: 1180px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -238,6 +232,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card .item .word {

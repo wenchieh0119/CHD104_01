@@ -46,10 +46,6 @@ button {
   margin: 40px;
 }
 
-.header .gnav ul {
-  padding: 2px;
-}
-
 .header .gnav ul li {
   list-style-type: none;
   display: inline;
@@ -98,7 +94,7 @@ button {
   font-family: "inter";
   font-weight: 500;
   letter-spacing: 4px;
-
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -189,6 +185,7 @@ button {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: center;
 
   width: 100%;
   box-sizing: border-box;
@@ -215,37 +212,7 @@ button {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 767px) {
-  .gnav .container li a {
-    font-size: 16px;
-  }
-  .content .item {
-    width: 50%;
-    margin: 0 auto;
-  }
-  .banner .title h1 {
-    font-size: 24px;
-  }
-  .wrap h3 {
-    font-size: 20px;
-  }
-  .wrap p {
-    font-size: 14px;
-  }
-
-  .new .path li a {
-    font-size: 16px;
-  }
-  .news .path li a {
-    font-size: 16px;
-  }
-  .news p {
-    font-size: 14px;
-  }
-}
-
 .news {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -254,9 +221,11 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
+  align-content: center;
+  justify-content: center;
 
+  align-items: center;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -265,6 +234,7 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  padding: 0 12.5px;
 }
 
 .news .card .item p {
@@ -304,7 +274,8 @@ button {
 .activity .frontpage .content {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  align-content: space-between;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -317,11 +288,8 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-items: center;
-
-  box-shadow: 0px 4px 8px #232d34;
-
-  border-radius: 50%;
+  align-items: center;
+  margin: 20px;
 }
 
 .activity .frontpage .content .item img {
@@ -530,4 +498,50 @@ button {
 body {
   background-color: #fff;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .gnav .container li a {
+    font-size: 16px;
+  }
+  .content .item {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .banner .title h1 {
+    font-size: 24px;
+  }
+  .wrap h3 {
+    font-size: 20px;
+  }
+  .wrap p {
+    font-size: 14px;
+  }
+
+  .new .path li a {
+    font-size: 16px;
+  }
+  .news .path li a {
+    font-size: 16px;
+  }
+  .news p {
+    font-size: 14px;
+  }
+
+  .new .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activity .frontpage .content .item h3 {
+    font-size: 20px;
+  }
 }

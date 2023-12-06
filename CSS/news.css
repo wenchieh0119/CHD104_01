@@ -46,10 +46,6 @@ button {
   margin: 40px;
 }
 
-.header .gnav ul {
-  padding: 2px;
-}
-
 .header .gnav ul li {
   list-style-type: none;
   display: inline;

@@ -182,10 +182,10 @@ button {
 .card {
   width: 1200px;
 
-  height: 1560px;
   display: flex;
-  flex-direction: column;
+
   flex-wrap: wrap;
+  align-content: space-between;
   justify-content: space-between;
 }
 
@@ -195,6 +195,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .card .item img {
