@@ -1,19 +1,22 @@
+/* header */
 .header .container {
   background-color: #ffbe00;
-  background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
+
   width: 100%;
-  height: 10vh;
+
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin: auto;
+  gap: 10px;
+  justify-content: space-around;
 }
 
 .header .header-logo {
   vertical-align: top;
   display: flex;
-  margin: 40px;
+  padding: 0 30px;
   align-items: center;
+  margin: 10px;
 }
 
 .header .navSearch {
@@ -26,13 +29,13 @@
 button {
   border: none;
   outline: none;
-  height: 40px;
+  padding: 0 10px;
+  height: 35px;
   background-color: #ffffff;
 }
 
 .header .navSearch input {
-  padding-left: 20px;
-  width: 70%;
+  padding: 0 10px;
   border-radius: 100px 0 0 100px;
 }
 
@@ -43,16 +46,14 @@ button {
 }
 
 .header .gnav {
-  margin: 40px;
-}
-
-.header .gnav ul {
-  padding: 2px;
+  margin: 30px;
+  position: relative;
 }
 
 .header .gnav ul li {
   list-style-type: none;
-  display: inline;
+  display: flex;
+
   margin: 0 6px;
   font-size: 20px;
   font-family: "inter";
@@ -146,21 +147,16 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin: 0;
 }
 .banner {
   position: relative;
-
-  padding: 0;
-
-  display: flex;
+  margin-bottom: 50px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.banner img {
-  width: 100%;
+  background: url(../img/news/top.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 
 .banner h1 {
@@ -180,22 +176,23 @@ button {
 }
 
 .card {
-  width: 1200px;
-
+  max-width: 1200px;
   display: flex;
-
+  flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-between;
   justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .card .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 10px;
+
+  position: relative;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
 .card .item img {
@@ -260,6 +257,9 @@ button {
   border-radius: 10px;
   font-family: "Saira Extra Condensed", sans-serif;
 }
+
+/* 回到最上面 */
+
 .back-to-top {
   /* 默認是隱藏的，這樣在第一屏才不顯示 */
 
@@ -267,7 +267,7 @@ button {
 
   bottom: 50px; /* 顯示在頁面底部 */
 
-  right: 50px; /* 顯示在頁面的右邊 */
+  right: 30px; /* 顯示在頁面的右邊 */
 
   z-index: 99; /* 確保不被其他功能覆蓋 */
 
@@ -287,13 +287,13 @@ button {
   border-radius: 10px; /* 增加圓角 */
   width: 30px;
   height: 20px;
-  font-size: 16px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   letter-spacing: 1px;
-  box-shadow: 0 5px 4px gray;
+  box-shadow: 0 2px 4px gray;
   color: #000000;
 }
 
@@ -306,6 +306,9 @@ button {
   background-color: #ffbe00;
   border-color: #fff;
 }
+
+/* 頁尾 */
+
 .footer .wrap {
   display: flex;
   background-color: #9d8521;
@@ -334,7 +337,7 @@ button {
   font-size: 20px;
   letter-spacing: 1px;
   font-family: "inter";
-  font-weight: lighter;
+  font-weight: 5 00;
   padding: 0 8px;
 }
 
@@ -343,7 +346,7 @@ button {
   text-decoration: none;
 }
 
-.footer .wrap .icon {
+/* .footer .wrap .icon {
   display: flex;
   margin-left: 700px;
 }
@@ -351,11 +354,110 @@ button {
 .footer .wrap .icon a {
   padding: 0 7px;
   margin-top: -96px;
-}
+} */
 
-.footer .wrap .bottom {
+.footer .wrap .footer-bottom {
   font-size: 12px;
   text-align: center;
   margin-top: 50px;
   color: rgb(217, 217, 217);
+}
+
+/* 平板 768-1024 */
+
+/* 手機版 */
+/* 手機版 */
+#menu-switch {
+  display: none;
+}
+.hb {
+  width: 40px;
+  height: 40px;
+  border: #eeeeee solid 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffbe00;
+}
+.hb span {
+  width: 80%;
+  height: 2px;
+  margin: 3px auto;
+  background-color: #fff;
+}
+
+@media screen and (width >= 768px) {
+  .hb {
+    display: none;
+  }
+}
+
+@media screen and (width < 768px) {
+  #menu-switch:checked ~ .header .gnav {
+    display: block;
+  }
+
+  .gnav a + a {
+    border-top: 1px solid #fff;
+  }
+}
+
+@media screen and (width < 768px) {
+  img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .gnav {
+    width: 100%;
+    background-color: #ffbe00;
+    display: none;
+    width: 100%;
+  }
+
+  .header .header-logo {
+    padding: 0;
+  }
+
+  .gnav .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .title .path li a {
+    font-size: 16px;
+  }
+
+  .title .path li {
+    line-height: 0;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .wrap .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .wrap nav ul li {
+    padding: 0 2px;
+  }
+
+  .footer .wrap nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer .wrap .footer-bottom {
+    font-size: 8px;
+  }
 }

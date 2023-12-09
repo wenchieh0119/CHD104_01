@@ -354,6 +354,8 @@ button {
   line-height: 1.7;
   font-family: "inter";
 }
+/* 回到最上面 */
+
 .back-to-top {
   /* 默認是隱藏的，這樣在第一屏才不顯示 */
 
@@ -361,7 +363,7 @@ button {
 
   bottom: 50px; /* 顯示在頁面底部 */
 
-  right: 50px; /* 顯示在頁面的右邊 */
+  right: 30px; /* 顯示在頁面的右邊 */
 
   z-index: 99; /* 確保不被其他功能覆蓋 */
 
@@ -381,13 +383,13 @@ button {
   border-radius: 10px; /* 增加圓角 */
   width: 30px;
   height: 20px;
-  font-size: 16px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   letter-spacing: 1px;
-  box-shadow: 0 5px 4px gray;
+  box-shadow: 0 2px 4px gray;
   color: #000000;
 }
 

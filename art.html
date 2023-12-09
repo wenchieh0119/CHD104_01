@@ -5,23 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>熱門活動 | Travel Easy Go</title>
-    <link rel="stylesheet" href="./CSS/normalize.css">
+    
     <link rel="stylesheet" href="./CSS/art.css">
     <link rel="stylesheet" href="./CSS/reset.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+    <!-- JS連結 -->
+    <script src="JavaScript/script.js"></script>
+<!-- header -->
+
+    <input type="checkbox" name="" id="menu-switch">
     <header class="header">
+        
         <div class="container">
-        <div class="header-logo">
-            <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="50px" width="110px"
-                    alt="網站名稱"></a>
-        </div>
+            <div class="header-logo">
+                <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="50px" width="110px"
+                        alt="網站名稱"></a>
+            </div>
 
             <div class="navSearch">
                 <input type="search" placeholder="想去哪裡呢?...." />
-                <button><img src="./img/front/search.png" alt="" height="25px" width="25px"></i></button>
+                <button><img src="./img/front/search.png" alt="" height="20px" width="20px"></i></button>
             </div>
+
+            <label for="menu-switch" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
             <nav class="gnav">
                 <ul class="container">
@@ -33,7 +47,7 @@
                 </ul>
             </nav>
 
-            </div>
+        </div>
     </header>
 
     <div class="banner">
@@ -200,37 +214,40 @@
 
     </div>
     <a href="#" class="back-to-top" style=" text-decoration:none">TOP</a>
-    <footer class="footer">
-        <div class="wrap">
-            <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="78px" width="171px"
-                    alt="網站名稱"></a>
+   
+<!-- 頁尾 -->
 
-            <div class="middle">
+<footer class="footer">
+    <div class="wrap">
+        <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="78px" width="171px"
+                alt="網站名稱"></a>
 
-                <nav>
-                    <ul>
-                        <li><a href="news.html">旅遊情報</a></li>
-                        <li><a href="explore_itinerary.html">探索行程</a></li>
-                        <li><a href="activity.html">熱門活動</a></li>
-                        <li><a href="trip_planning.html">行程規劃</a></li>
-                        <li><a href="#">會員中心</a></li>
-                        <li></li>
-                    </ul>
+        <div class="middle">
 
-                </nav>
-                <div class="bottom">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</div>
-            </div>
-            <div class="icon">
-                <a href="#"> <img src="./img/front/ig.png" height="30px" width="30px" alt="instragm"></a>
-                <a href="#"> <img src="./img/front/twit.png" height="30px" width="30px" alt="twitter"></a>
-                <a href="#"> <img src="./img/front/fb.png" height="30px" width="30px" alt="facebook"></a>
+            <nav>
+                <ul>
+                    <li><a href="news.html">旅遊情報</a></li>
+                    <li><a href="explore_itinerary.html">探索行程</a></li>
+                    <li><a href="activity.html">熱門活動</a></li>
+                    <li><a href="trip_planning.html">行程規劃</a></li>
+                    <li><a href="#">會員中心</a></li>
+                    <li></li>
+                </ul>
 
-            </div>
+            </nav>
+            <div class="footer-bottom">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</div>
         </div>
+        <div class="icon">
+            <!-- <a href="#"> <img src="./img/front/ig.png" height="30px" width="30px" alt="instragm"></a>
+            <a href="#"> <img src="./img/front/twit.png" height="30px" width="30px" alt="twitter"></a>
+            <a href="#"> <img src="./img/front/fb.png" height="30px" width="30px" alt="facebook"></a> -->
+
+        </div>
+    </div>
 
 
 
-    </footer>
+</footer>
 
 
 
