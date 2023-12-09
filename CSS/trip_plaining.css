@@ -40,7 +40,6 @@ button {
 }
 
 .header .navSearch button {
-  width: 20%;
   border-radius: 0 100px 100px 0;
   cursor: pointer;
 }
@@ -524,7 +523,16 @@ button {
     width: 100%;
   }
 
+  .header .navSearch input {
+    max-width: 100px;
+    height: 30px;
+  }
+  .header .navSearch input,
+  button {
+    height: 30px;
+  }
   .header .header-logo {
+    width: 20%;
     padding: 0;
   }
 

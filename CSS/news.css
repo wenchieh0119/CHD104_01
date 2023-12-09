@@ -37,10 +37,10 @@ button {
 .header .navSearch input {
   padding: 0 10px;
   border-radius: 100px 0 0 100px;
+  max-width: 200px;
 }
 
 .header .navSearch button {
-  width: 20%;
   border-radius: 0 100px 100px 0;
   cursor: pointer;
 }
@@ -124,36 +124,36 @@ button {
 
 .wrap .card .item {
   display: flex;
+
   flex-direction: column;
   margin: 10px;
-
   position: relative;
   flex-wrap: wrap;
 }
 
 .wrap .card .item .word {
-  width: 380px;
+  max-width: 380px;
   height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   top: 25%;
-
+  width: 100%;
   position: absolute;
-
+  flex-wrap: wrap;
   color: rgba(0, 0, 0, 0.789);
   background-color: #ffffffc4;
 }
 
 .wrap .card .item p {
-  margin: 10px;
   text-align: left;
   font-size: 16px;
   font-family: "inter";
   letter-spacing: 0.7px;
   line-height: 1.5;
-
-  width: 360px;
+  max-width: 360px;
+  padding: 0 10px;
+  width: 100%;
 }
 
 .wrap .card .item h3 {
@@ -499,19 +499,23 @@ button {
     max-width: 100%;
     height: auto;
   }
-  img {
-    border: 0;
-    max-width: 100%;
-    height: auto;
-  }
+
   .gnav {
     width: 100%;
     background-color: #ffbe00;
     display: none;
     width: 100%;
   }
-
+  .header .navSearch input {
+    max-width: 100px;
+    height: 30px;
+  }
+  .header .navSearch input,
+  button {
+    height: 30px;
+  }
   .header .header-logo {
+    width: 20%;
     padding: 0;
   }
 
