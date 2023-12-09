@@ -1,25 +1,28 @@
+/* header */
 .header .container {
   background-color: #ffbe00;
-  background-image: linear-gradient(to top, transparent 0%, #fff5 100%);
+
   width: 100%;
-  height: 10vh;
+
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin: auto;
+  gap: 10px;
+  justify-content: space-around;
 }
 
 .header .header-logo {
   vertical-align: top;
   display: flex;
-  margin: 40px;
+  padding: 0 30px;
   align-items: center;
+  margin: 10px;
 }
 
 .header .navSearch {
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 10px 30px;
 }
 
 .header .navSearch input,
@@ -31,8 +34,7 @@ button {
 }
 
 .header .navSearch input {
-  padding-left: 20px;
-  width: 70%;
+  padding: 0 20px;
   border-radius: 100px 0 0 100px;
 }
 
@@ -43,12 +45,14 @@ button {
 }
 
 .header .gnav {
-  margin: 40px;
+  margin: 30px;
+  position: relative;
 }
 
 .header .gnav ul li {
   list-style-type: none;
-  display: inline;
+  display: flex;
+
   margin: 0 6px;
   font-size: 20px;
   font-family: "inter";
@@ -65,6 +69,7 @@ button {
   color: rgb(255, 255, 255);
 }
 
+/* 旅遊情報 */
 .wrap {
   width: 100%;
 }
@@ -174,6 +179,7 @@ button {
   color: gray;
 }
 
+/* 國內旅遊 國外旅遊*/
 .new {
   max-width: 1200px;
   width: 100%;
@@ -255,6 +261,9 @@ button {
   font-family: "inter";
   letter-spacing: 1.5px;
 }
+
+/* 熱門活動 */
+
 .activity {
   max-width: 1200px;
   width: 100%;
@@ -313,9 +322,10 @@ button {
   font-family: "inter";
   text-shadow: 1px 1px #eeeeee, 3px 3px 3px #eeeeee;
 }
-
+/* 留言分享 */
 .bottom {
   background-color: #224641;
+  width: 100%;
 }
 
 .bottom .card {
@@ -395,6 +405,8 @@ button {
   font-family: "inter";
 }
 
+/* 回到最上面 */
+
 .back-to-top {
   /* 默認是隱藏的，這樣在第一屏才不顯示 */
 
@@ -441,6 +453,8 @@ button {
   background-color: #ffbe00;
   border-color: #fff;
 }
+
+/* 頁尾 */
 
 .footer .wrap {
   display: flex;
@@ -505,8 +519,46 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* 平板 768-1024 */
 
-@media only screen and (max-width: 767px) {
+/* 手機版 */
+
+#menu-switch {
+  display: none;
+}
+.hb {
+  width: 40px;
+  height: 40px;
+  border: #eeeeee solid 1px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hb span {
+  width: 80%;
+  height: 2px;
+  margin: 3px auto;
+  background-color: #fff;
+}
+@media screen and (width >= 768px) {
+  .hb {
+    display: none;
+  }
+}
+@media screen and (width < 768px) {
+  .gnav {
+    width: 100%;
+    background-color: #ffbe00;
+    display: none;
+    width: 100%;
+  }
+
+  .gnav .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .gnav .container li a {
     font-size: 16px;
   }
@@ -543,5 +595,18 @@ img {
 
   .activity .frontpage .content .item h3 {
     font-size: 20px;
+  }
+}
+.gnav a {
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (width < 768px) {
+  #menu-switch:checked ~ .header .gnav {
+    display: block;
+  }
+
+  .gnav a + a {
+    border-top: 1px solid #fff;
   }
 }
