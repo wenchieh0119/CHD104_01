@@ -22,19 +22,20 @@
 .header .navSearch {
   display: flex;
   align-items: center;
-  margin: 10px 30px;
+  margin: 10px;
 }
 
 .header .navSearch input,
 button {
   border: none;
   outline: none;
-  height: 40px;
+  padding: 0 10px;
+  height: 35px;
   background-color: #ffffff;
 }
 
 .header .navSearch input {
-  padding: 0 20px;
+  padding: 0 10px;
   border-radius: 100px 0 0 100px;
 }
 
@@ -70,9 +71,6 @@ button {
 }
 
 /* 旅遊情報 */
-.wrap {
-  width: 100%;
-}
 
 .wrap .banner {
   position: relative;
@@ -101,11 +99,12 @@ button {
   font-weight: 500;
   letter-spacing: 4px;
   line-height: 1.5;
-  padding: 0 20px;
+  margin: 0 30px;
   text-align: left;
 }
 
 .wrap {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,27 +178,29 @@ button {
 }
 
 /* 國內旅遊 國外旅遊*/
+
 .new {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .new .card {
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
 
-  width: 100%;
+  margin-bottom: 50px;
 }
 
 .new .card .item {
   position: relative;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 50px;
+  margin: 10px;
 }
 
 .new .card .item .word {
@@ -216,30 +217,29 @@ button {
   color: white;
   font-weight: 600;
 }
-
 .news {
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .news .card {
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
-
-  align-items: center;
+  justify-content: space-around;
   width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 50px;
 }
 
 .news .card .item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  padding: 0 12.5px;
+  margin: 10px;
 }
 
 .news .card .item p {
@@ -277,6 +277,7 @@ button {
   width: 100%;
   box-sizing: border-box;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .activity .frontpage .content {
@@ -285,8 +286,6 @@ button {
   justify-content: center;
   align-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -297,7 +296,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .activity .frontpage .content .item img {
@@ -413,7 +412,7 @@ button {
 
   bottom: 50px; /* 顯示在頁面底部 */
 
-  right: 50px; /* 顯示在頁面的右邊 */
+  right: 30px; /* 顯示在頁面的右邊 */
 
   z-index: 99; /* 確保不被其他功能覆蓋 */
 
@@ -433,7 +432,7 @@ button {
   border-radius: 10px; /* 增加圓角 */
   width: 30px;
   height: 20px;
-  font-size: 16px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +491,7 @@ button {
   text-decoration: none;
 }
 
-.footer .wrap .icon {
+/* .footer .wrap .icon {
   display: flex;
   margin-left: 700px;
 }
@@ -500,7 +499,7 @@ button {
 .footer .wrap .icon a {
   padding: 0 7px;
   margin-top: -96px;
-}
+} */
 
 .footer .wrap .footer-bottom {
   font-size: 12px;
@@ -508,16 +507,7 @@ button {
   margin-top: 50px;
   color: rgb(217, 217, 217);
 }
-body {
-  background-color: #fff;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-}
 
-img {
-  border: 0;
-  max-width: 100%;
-  height: auto;
-}
 /* 平板 768-1024 */
 
 /* 手機版 */
@@ -528,11 +518,12 @@ img {
 .hb {
   width: 40px;
   height: 40px;
-  border: #eeeeee solid 1px;
+  border: #eeeeee solid 2px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #ffbe00;
 }
 .hb span {
   width: 80%;
@@ -540,6 +531,7 @@ img {
   margin: 3px auto;
   background-color: #fff;
 }
+
 @media screen and (width >= 768px) {
   .hb {
     display: none;
@@ -547,13 +539,30 @@ img {
 }
 
 @media screen and (width < 768px) {
-  .header-logo {
+  #menu-switch:checked ~ .header .gnav {
+    display: block;
+  }
+
+  .gnav a + a {
+    border-top: 1px solid #fff;
+  }
+}
+
+@media screen and (width < 768px) {
+  img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
   }
   .gnav {
     width: 100%;
     background-color: #ffbe00;
     display: none;
     width: 100%;
+  }
+
+  .header .header-logo {
+    padding: 0;
   }
 
   .gnav .container {
@@ -569,23 +578,34 @@ img {
     margin: 0 auto;
   }
   .banner .title h1 {
-    font-size: 24px;
-  }
-  .wrap h3 {
     font-size: 20px;
   }
-  .wrap p {
-    font-size: 14px;
+
+  .new .title .path li {
+    line-height: 0;
+  }
+
+  .news .title .path li {
+    line-height: 0;
   }
 
   .new .path li a {
     font-size: 16px;
+    padding: 0 2px;
+    letter-spacing: 1;
   }
+
   .news .path li a {
     font-size: 16px;
+    letter-spacing: 1;
   }
-  .news p {
-    font-size: 14px;
+
+  .new .card .item p {
+    font-size: 16px;
+  }
+
+  .news .card .item p {
+    font-size: 16px;
   }
 
   .new .card {
@@ -598,17 +618,16 @@ img {
   .activity .frontpage .content .item h3 {
     font-size: 20px;
   }
-}
-.gnav a {
-  text-decoration: none;
-  color: #000;
-}
-@media screen and (width < 768px) {
-  #menu-switch:checked ~ .header .gnav {
-    display: block;
+
+  .footer .wrap nav ul li {
+    padding: 0 2px;
   }
 
-  .gnav a + a {
-    border-top: 1px solid #fff;
+  .footer .wrap nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer .wrap .footer-bottom {
+    font-size: 8px;
   }
 }
