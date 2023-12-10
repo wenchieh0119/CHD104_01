@@ -541,7 +541,9 @@ button {
     padding: 6px 8px;
   }
   .banner .title h2 {
-    letter-spacing: 5px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 24px;
   }
   .card {
     justify-content: center;

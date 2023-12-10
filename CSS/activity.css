@@ -465,7 +465,11 @@ button {
   .gnav .container li a {
     font-size: 16px;
   }
-
+  .banner .title h2 {
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 24px;
+  }
   .card .item {
     flex-direction: column;
   }
