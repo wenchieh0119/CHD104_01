@@ -76,25 +76,20 @@ button {
   align-items: center;
   margin: 0;
 }
-.banner img {
-  width: 100%;
-}
 
 .banner .title {
   position: relative;
-
-  padding: 0;
-
-  display: flex;
+  margin-bottom: 20px;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: url(../img/activity_park/banner.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 
 .banner .title h2 {
   position: absolute;
-  font-size: 40px;
+  font-size: 32px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -110,7 +105,7 @@ button {
 }
 
 .banner h1 {
-  font-size: 40px;
+  font-size: 36px;
   width: 100%;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
@@ -125,21 +120,20 @@ button {
   margin: 0;
   font-family: "inter";
 }
+
 .top_btn ul {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
 .top_btn ul li {
-  font-size: 20px;
   color: #2b3e79;
   list-style-type: none;
-  margin: 0 10px;
-  width: 150px;
-  height: 70px;
+  margin: 10px;
+  padding: 30px 10px;
   background-color: #2b3e79;
 
   border: none;
@@ -152,7 +146,12 @@ button {
   transition-duration: 0.4s;
   cursor: pointer;
 
-  padding-left: 10px;
+  padding-left: 20px;
+}
+.top_btn ul li a p {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .top_btn ul li:hover {
@@ -160,15 +159,9 @@ button {
   color: rgb(0, 0, 0);
 }
 
-.top_btn ul li a:hover {
-  color: rgb(0, 0, 0);
+.top_btn ul li p:hover {
+  color: #000;
 }
-
-.top_btn ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .top_btn ul li span {
   font-size: 24px;
   background-color: white;
@@ -179,6 +172,41 @@ button {
   overflow: hidden;
   font-family: "inter";
   margin: 10px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 44px;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.title .title_h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title .box {
+  height: 44px;
+  width: 20px;
+  background-color: #2b3e79;
+}
+
+.title h3 {
+  padding: 0 10px;
+  display: flex;
+  font-size: 28px;
+  color: black;
+  font-family: "inter";
+  font-weight: 600;
+
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.5px;
 }
 
 .hotview_park {
@@ -205,7 +233,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .title h3 {
@@ -225,19 +253,17 @@ button {
 .hotview_park .card {
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  max-width: 1200px;
   flex-wrap: wrap;
-
+  width: 100%;
   justify-content: space-between;
 }
 
 .hotview_park .word {
-  width: 380px;
-  height: 40px;
   text-align: center;
   color: #ffffff;
   font-size: 18px;
-  padding-top: 20px;
+  padding: 20px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -249,8 +275,7 @@ button {
 
 .hotview_park .word:hover .hover {
   display: block;
-  width: 360px;
-  height: 80px;
+
   padding: 10px;
   /* border: black solid 1px; */
 
@@ -283,7 +308,7 @@ button {
 .btn button {
   height: 60px;
   width: 148px;
-  font-size: 20px;
+  font-size: 16px;
   background: transparent;
   border: 2px solid #2b3e79;
   font-family: "Saira Extra Condensed", sans-serif;
@@ -302,7 +327,7 @@ button {
 
 .btn button:hover {
   opacity: 1;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   background-color: #2b3e79;
   color: #fff;
@@ -488,5 +513,51 @@ button {
 
   .gnav .container li a {
     font-size: 16px;
+  }
+
+  .top_btn ul {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .top_btn ul li {
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 5px;
+  }
+
+  .top_btn ul li a {
+    line-height: 1.8;
+  }
+
+  .top_btn ul li a p {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .top_btn ul li span {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+  .banner .title h2 {
+    letter-spacing: 5px;
+  }
+  .card {
+    justify-content: center;
+  }
+  .card .item {
+    margin: 10px;
+  }
+  .footer .wrap nav ul li {
+    padding: 0 2px;
+  }
+
+  .footer .wrap nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer .wrap .footer-bottom {
+    font-size: 8px;
   }
 }

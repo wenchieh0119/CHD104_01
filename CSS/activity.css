@@ -76,15 +76,20 @@ button {
   align-items: center;
   margin: 0;
 }
-.banner {
+
+.banner .title {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 100%;
+  background: url(../img/activity_food/banner.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 
 .banner .title h2 {
   position: absolute;
-  font-size: 40px;
+  font-size: 32px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -100,7 +105,7 @@ button {
 }
 
 .banner h1 {
-  font-size: 40px;
+  font-size: 36px;
   width: 100%;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
@@ -120,16 +125,14 @@ button {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
 .top_btn ul li {
-  font-size: 20px;
   color: #2b3e79;
   list-style-type: none;
-  margin: 0 10px;
-  width: 150px;
-  height: 70px;
+  margin: 10px;
+  padding: 30px 10px;
   background-color: #2b3e79;
 
   border: none;
@@ -142,7 +145,12 @@ button {
   transition-duration: 0.4s;
   cursor: pointer;
 
-  padding-left: 10px;
+  padding-left: 20px;
+}
+.top_btn ul li a p {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .top_btn ul li:hover {
@@ -150,15 +158,9 @@ button {
   color: rgb(0, 0, 0);
 }
 
-.top_btn ul li a:hover {
-  color: rgb(0, 0, 0);
+.top_btn ul li p:hover {
+  color: #000;
 }
-
-.top_btn ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .top_btn ul li span {
   font-size: 24px;
   background-color: white;
@@ -170,34 +172,39 @@ button {
   font-family: "inter";
   margin: 10px;
 }
-
+.banner .title h2 {
+  letter-spacing: 5px;
+}
 .title {
+  display: flex;
   justify-content: center;
   text-align: center;
   line-height: 44px;
-  display: flex;
+
   flex-direction: column;
   align-items: center;
 }
 
 .title .title_h3 {
-  width: 200px;
-  height: 44px;
-  background-color: #2b3e79;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
 
+.title .box {
+  height: 44px;
+  width: 20px;
+  background-color: #2b3e79;
+}
+
 .title h3 {
-  width: 160px;
+  padding: 0 10px;
   display: flex;
   font-size: 28px;
   color: black;
   font-family: "inter";
   font-weight: 600;
-  background-color: white;
 
   justify-content: center;
   align-items: center;
@@ -206,27 +213,31 @@ button {
 
 .card {
   display: flex;
-  flex-wrap: wrap;
+  padding: 10px;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card .item {
   display: flex;
   flex-direction: row;
   color: black;
-  width: 1130px;
-  height: 340px;
-  padding-left: 40px;
+  max-width: 1130px;
+  width: 100%;
+
+  padding: 20px 40px;
   margin-bottom: 30px;
+  justify-content: center;
   align-items: center;
+
   border: rgb(181, 181, 181) solid 1px;
 }
 
 .card .item .word {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .card .item .word h3 {
@@ -249,7 +260,7 @@ button {
 .btn-view button {
   height: 60px;
   width: 148px;
-  font-size: 20px;
+  font-size: 16px;
   background: transparent;
   border: 2px solid #ffbe00;
   font-family: "Saira Extra Condensed", sans-serif;
@@ -453,5 +464,50 @@ button {
 
   .gnav .container li a {
     font-size: 16px;
+  }
+
+  .card .item {
+    flex-direction: column;
+  }
+
+  .top_btn ul {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .top_btn ul li {
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 5px;
+  }
+
+  .top_btn ul li a {
+    line-height: 1.8;
+  }
+
+  .top_btn ul li a p {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .top_btn ul li span {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+  .banner .title h2 {
+    letter-spacing: 5px;
+  }
+
+  .footer .wrap nav ul li {
+    padding: 0 2px;
+  }
+
+  .footer .wrap nav ul li a {
+    font-size: 14px;
+  }
+
+  .footer .wrap .footer-bottom {
+    font-size: 8px;
   }
 }
