@@ -243,6 +243,7 @@ button {
 .card .item .word h3 {
   font-size: 20px;
   letter-spacing: 1px;
+  line-height: 1.5;
   text-align: left;
   font-family: "inter";
   font-weight: 600;
@@ -470,10 +471,17 @@ button {
     margin: 0;
     font-size: 24px;
   }
-  .card .item {
-    flex-direction: column;
-  }
 
+  .card .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px 20px;
+  }
+  .card .item .word {
+    padding: 20px 0;
+  }
   .top_btn ul {
     margin: 10px;
     padding: 5px;
