@@ -414,7 +414,7 @@ button {
 .hb {
   width: 40px;
   height: 40px;
-  border: #eeeeee solid 2px;
+  border: #2b3e79 solid 2px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -425,7 +425,7 @@ button {
   width: 80%;
   height: 2px;
   margin: 3px auto;
-  background-color: #fff;
+  background-color: #2b3e79;
 }
 
 @media screen and (width >= 768px) {

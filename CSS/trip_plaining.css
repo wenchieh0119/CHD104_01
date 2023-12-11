@@ -70,14 +70,18 @@ button {
 }
 
 .banner {
-  margin-bottom: -3px;
+  width: 100%;
+  background: url(../img/plaining/banner.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 .trip {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: -3px;
+
   padding: auto;
 }
 
@@ -172,7 +176,7 @@ button {
 }
 
 .plan {
-  width: 40%;
+  width: 50%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -480,18 +484,19 @@ button {
 .hb {
   width: 40px;
   height: 40px;
-  border: #eeeeee solid 2px;
+  border: #2b3e79 solid 2px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #ffbe00;
 }
+
 .hb span {
   width: 80%;
   height: 2px;
   margin: 3px auto;
-  background-color: #fff;
+  background-color: #2b3e79;
 }
 
 @media screen and (width >= 768px) {
@@ -543,5 +548,8 @@ button {
 
   .gnav .container li a {
     font-size: 16px;
+  }
+  .trip_plan {
+    flex-direction: column-reverse;
   }
 }
