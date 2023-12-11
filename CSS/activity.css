@@ -476,8 +476,9 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 20px 20px;
+    background-image: none;
+    background-color: white;
   }
   .card .item .word {
     padding: 20px 0;

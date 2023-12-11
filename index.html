@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="./CSS/reset.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS 連結 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
+  
     <!-- JS連結 -->
     <script src="JavaScript/script.js"></script>
 <!-- header -->
@@ -85,7 +89,7 @@
             </div>
             <div class="card">
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
 
                     <div class="word">
                         <p>台東‧熱氣球嘉年華</p>
@@ -97,7 +101,7 @@
 
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <div class="word">
                         <p>澎湖‧花火節</p>
                     </div>
@@ -108,7 +112,7 @@
 
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
 
                     <div class="word">
                         <p>蘭嶼‧飛魚祭</p>
@@ -122,7 +126,7 @@
 
 
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <div class="word">
                         <p>高雄‧一日遊</p>
                     </div>
@@ -133,7 +137,7 @@
 
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <div class="word">
                         <p>法國‧必玩行程</p>
                     </div>
@@ -142,7 +146,7 @@
 
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
 
                     <div class="word">
                         <p>韓國‧必去景點</p>
@@ -153,7 +157,7 @@
 
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <div class="word">
                         <p>日本‧櫻花祭</p>
                     </div>
@@ -193,23 +197,23 @@
             </div>
             <div class="card">
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <a href=""></a>
                     <img src="./img/front/pic2-1.png" height="230px" width="280px" alt="">
                     <p>台北一日遊</p>
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic2-2.png" height="230px" width="280px" alt="">
                     <p>九份山城風情之旅</p>
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic2-3.png" height="230px" width="280px" alt="">
                     <p>綠島好好玩</p>
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic2-4.png" height="230px" width="280px" alt="">
                     <p>日月潭的奇幻之旅</p>
                 </div>
@@ -245,22 +249,22 @@
             </div>
             <div class="card">
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic3-1.png" height="230px" width="280px" alt="">
                     <p>曼谷五日遊</p>
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic3-2.png" height="230px" width="280px" alt="">
                     <p>墨爾本必去行程</p>
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic3-3.png" height="230px" width="280px" alt="">
                     <p>行走紐約</p>
                 </div>
 
-                <div class="item">
+                <div class="item"data-aos="zoom-in-up">
                     <img src="./img/front/pic3-4.png" height="230px" width="280px" alt="">
                     <p>雪梨必去行程</p>
                 </div>
@@ -300,7 +304,7 @@
 
 
 
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in">
                         <a href="activity.html">
                             <h3>美食品嘗</h3>
                         </a>
@@ -310,7 +314,7 @@
 
 
 
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in">
                         <a href="park.html">
                             <h3>主題樂園</h3>
                         </a>
@@ -319,7 +323,7 @@
 
                     </div>
 
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in">
                         <a href="attractions.html">
                             <h3>景點探索</h3>
                         </a>
@@ -331,7 +335,7 @@
 
 
 
-                    <div class="item">
+                    <div class="item"data-aos="zoom-in">
                         <a href="art.html">
                             <h3>文藝主題</h3>
                         </a>
@@ -355,8 +359,8 @@
 
                 <div class="card">
 
-                    <div class="item">
-                        <div class="box">
+                    <div class="item" >
+                        <div class="box" >
                             <img src="img/front/pic5-1.png" width="90px" height="107px " alt="">
                             <p>阿芳</p>
                         </div>
@@ -551,6 +555,12 @@
 
 
     </footer>
+  <!-- AOS 連結 -->
+  <script>
+    AOS.init({
+        duration:3000,
+    });
+  </script>
 
 
 </body>

@@ -69,33 +69,26 @@ button {
   color: rgb(255, 255, 255);
 }
 
-.title {
-  justify-content: left;
-  text-align: center;
-  line-height: 44px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .title .title_h3 {
-  width: 180px;
-  height: 44px;
-  background-color: #2b3e79;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
 
+.title .box {
+  height: 44px;
+  width: 20px;
+  background-color: #2b3e79;
+}
+
 .title h3 {
-  width: 140px;
+  padding: 0 10px;
   display: flex;
   font-size: 28px;
   color: black;
   font-family: "inter";
   font-weight: 600;
-  background-color: white;
 
   justify-content: center;
   align-items: center;
@@ -131,6 +124,7 @@ button {
 .title .path li :hover {
   color: gray;
 }
+
 .wrap {
   width: 100%;
   display: flex;

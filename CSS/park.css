@@ -217,39 +217,6 @@ button {
   align-items: center;
 }
 
-.title {
-  justify-content: center;
-  text-align: center;
-  line-height: 44px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title .title_h3 {
-  width: 200px;
-  height: 44px;
-  background-color: #2b3e79;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.title h3 {
-  width: 160px;
-  display: flex;
-  font-size: 28px;
-  color: black;
-  font-family: "inter";
-  font-weight: 600;
-  background-color: white;
-
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 1.5px;
-}
-
 .hotview_park .card {
   display: flex;
   flex-direction: row;
@@ -262,7 +229,7 @@ button {
 .hotview_park .word {
   text-align: center;
   color: #ffffff;
-  font-size: 18px;
+
   padding: 20px;
   background-color: #2b3e79;
   background-image: url("https://www.transparenttextures.com/patterns/handmade-paper.png");
@@ -271,6 +238,9 @@ button {
   font-family: "Saira Extra Condensed", sans-serif;
 
   margin-bottom: 100px;
+}
+.hotview_park .word span {
+  font-size: 20px;
 }
 
 .hotview_park .word:hover .hover {
@@ -297,7 +267,6 @@ button {
 
   width: 300px;
   height: 80px;
-  font-size: 16px;
 
   text-align: left;
   letter-spacing: 1px;
@@ -545,12 +514,26 @@ button {
     margin: 0;
     font-size: 24px;
   }
-  .card {
+  .hotview_park .card {
     justify-content: center;
+    margin-bottom: 0;
   }
   .card .item {
     margin: 10px;
   }
+  .hotview_park .hover {
+    display: block;
+    width: none;
+    color: #ffffff;
+    padding-left: 30px;
+  }
+  .hotview_park .word span {
+    background-color: #2b3e79;
+  }
+  .hotview_park .word {
+    background-image: none;
+  }
+
   .footer .wrap nav ul li {
     padding: 0 2px;
   }
