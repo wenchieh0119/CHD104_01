@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./CSS/trip_plaining.css">
   <link rel="stylesheet" href="./CSS/reset.css">
   <link rel="shortcut icon" href="./img/front/logocon.ico" type="image/x-icon">
+  
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -15,6 +16,7 @@
 <body>
   <!-- JS連結 -->
   <script src="JavaScript/script.js"></script>
+  <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
   <!-- header -->
 
   <input type="checkbox" name="" id="menu-switch">
@@ -102,14 +104,15 @@
                   <div class="card">
                     <div class="line"></div>
                     <div class="left">
-                      <div class="top">10:00</div>
+                      <div class="top"><input type="time" value="10:00">
+                      </div>
                       <div class="icon"><i class="fa-solid fa-car"></i></div>
-                      <div class="bottom">11:00</div>
+                      <div class="bottom"><input type="time" value="13:00"></div>
                     </div>
                     <div class="right">
-                      <div class="top">赤崁樓</div>
-                      <div class="add">台南市中西區民權路二段212號</div>
-                      <!-- <div class="bottom"></div> -->
+                      <div class="top"><input type="text" name="title"placeholder="景點/地標 ex:赤崁樓" ></div>
+                      <div class="add"><input type="text" name="title"placeholder="地址: ex:中西區民權路二段212號" ></div>
+                      <div class="bottom"><input type="text" name="title"placeholder="備註" ></div>
                     </div>
                   </div>
                   <div class="time"><i class="fa-solid fa-trash"></i></div>
@@ -176,11 +179,31 @@
   </div>
 
 
-  <a href="#" class="back-to-top" style=" text-decoration:none">TOP</a>
+  <a href="#" class="js-back-to-top back-to-top"  >TOP</a>
 
-
-  <!-- 頁尾 -->
-
+  
+  <script>
+    $(function() {
+      var $win = $(window);
+      var $backToTop = $('.js-back-to-top');
+      // 当用户滚动到离顶部100像素时，展示回到顶部按钮
+      $win.scroll(function() {
+        if ($win.scrollTop() > 100) {
+          $backToTop.show();
+        } else {
+          $backToTop.hide();
+        }
+      });
+      // 当用户点击按钮时，通过动画效果返回头部
+      $backToTop.click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 500);
+      });
+    });
+  </script>
+  
+<!-- 
   <footer class="footer">
     <div class="wrap">
       <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="78px" width="171px" alt="網站名稱"></a>
@@ -201,7 +224,7 @@
         <div class="footer-bottom">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</div>
       </div>
       <div class="icon">
-        <!-- <a href="#"> <img src="./img/front/ig.png" height="30px" width="30px" alt="instragm"></a>
+      <a href="#"> <img src="./img/front/ig.png" height="30px" width="30px" alt="instragm"></a>
           <a href="#"> <img src="./img/front/twit.png" height="30px" width="30px" alt="twitter"></a>
           <a href="#"> <img src="./img/front/fb.png" height="30px" width="30px" alt="facebook"></a> -->
 
@@ -210,7 +233,8 @@
 
 
 
-  </footer>
+  </footer> 
+
 
 
 

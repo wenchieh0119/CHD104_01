@@ -1,4 +1,8 @@
 /* header */
+
+.header {
+  width: 100vw;
+}
 .header .container {
   background-color: #ffbe00;
 
@@ -70,7 +74,7 @@ button {
 }
 
 .banner {
-  width: 100%;
+  width: 100vw;
   background: url(../img/plaining/banner.svg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -83,20 +87,23 @@ button {
   align-items: center;
 
   padding: auto;
+
+  height: 85vh;
 }
 
 .trip_plan {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   overflow: hidden;
   justify-content: space-between;
+}
+.trip_plan_full {
+  height: 100vh;
+  width: 100vw;
   position: sticky;
   top: 0;
   /* z-index: 1; */
   /* height: 100%; */
-}
-
-.trip_plan_full {
 }
 
 .trip_plan_full .title {
@@ -106,10 +113,10 @@ button {
   justify-content: center;
   align-items: center;
   height: 100px;
-
-  position: sticky;
+  width: 100%;
+  /* position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1; */
   /* height: 100%; */
 }
 
@@ -133,7 +140,7 @@ button {
 }
 
 .trip_plan .trip {
-  width: 50vw;
+  width: 60vw;
   height: 100vh;
   background-color: #d8d8d8;
   display: flex;
@@ -149,7 +156,7 @@ button {
 .trip_plan .trip .top {
   background-color: #2b3e79;
   width: 86%;
-  height: 10%;
+  height: 60px;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -160,12 +167,11 @@ button {
 }
 
 .trip .content {
-  width: 83%;
-  height: 40%;
+  margin: 20px 50px;
   display: flex;
   background-color: #2b3e79;
   color: white;
-  padding-left: 20px;
+  padding: 20px 0;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -173,11 +179,11 @@ button {
 }
 
 .trip .content img {
-  width: 50%;
+  padding: 10px;
 }
 
 .trip .content p {
-  padding: 4%;
+  padding: 10px;
   display: flex;
   align-items: center;
   line-height: 1.5;
@@ -206,35 +212,32 @@ button {
   margin-bottom: 30px;
 }
 .wrap {
-  width: 50vw;
-  height: 100vh;
+  width: 40vw;
+  background-color: #2b3e79;
   margin: 0 auto;
-  h1 {
-    font-size: 24px;
-    color: #2b3e79;
-    text-align: center;
-  }
+
   .tableGroup {
     height: 100vh;
+
     overflow-y: auto;
   }
 }
 
 #style-3::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #2b3e79;
 }
 
 #style-3::-webkit-scrollbar {
-  width: 6px;
-  background-color: black;
+  width: 16px;
+  background-color: #2b3e79;
 }
 
 #style-3::-webkit-scrollbar-thumb {
-  background-color: #ffbe00;
+  background-color: #ffc61c;
 }
 
 .plan {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,14 +298,15 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-left: -8px;
 }
 
 .card > .left .top {
-  width: 70px;
+  width: 90px;
   height: 28px;
   border-radius: 5px;
   background-color: white;
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px 0;
   display: flex;
   justify-content: center;
@@ -323,16 +327,31 @@ button {
 }
 
 .card > .left .bottom {
-  width: 70px;
+  width: 90px;
   height: 28px;
   border-radius: 5px;
   background-color: white;
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px 0;
   display: flex;
   justify-content: center;
   font-family: "arial";
   align-items: center;
+}
+.card > .left .bottom input {
+  width: 75px;
+  height: 28px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+}
+
+.card > .left .top input {
+  width: 75px;
+  height: 28px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
 }
 
 .card > .right {
@@ -344,21 +363,43 @@ button {
 
 .card > .right .top {
   border-radius: 5px;
-  width: 180px;
-  height: 60px;
+  width: 200px;
+  height: 50px;
   letter-spacing: 1.5px;
   background-color: white;
   font-size: 16px;
-  margin: 16px 0;
+  margin: 2px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "inter";
+  margin: 10px;
+}
+
+.card > .right .top input {
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  padding: 0 10px;
+}
+.card > .right .add input {
+  background-color: #ffbe00;
+  border: none;
+  width: 200px;
+}
+
+.card > .right .bottom input {
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
 }
 
 .card > .right .add {
   width: 200px;
-  height: 20px;
+  height: 40px;
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -369,10 +410,10 @@ button {
 
 .card > .right .bottom {
   font-size: 20px;
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  margin: 10px;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -383,14 +424,21 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  font-size: 24px;
+
   color: white;
-  margin: 20px 50%;
+  margin: 20px 45%;
 
   background-color: #ffbe00;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.icon i {
+  font-size: 24px;
+}
+
+.time i {
+  font-size: 24px;
 }
 
 .box {
@@ -411,7 +459,7 @@ button {
 
 .plan .btn {
   width: 100px;
-  height: 30px;
+  height: 40px;
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -608,6 +656,21 @@ button {
     font-size: 16px;
   }
   .trip_plan {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .trip .top {
+    margin: 10px;
+  }
+
+  .trip .content {
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+  .trip_plan .trip {
+    width: 100vw;
+  }
+  .wrap {
+    width: 100vw;
   }
 }
