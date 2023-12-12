@@ -221,9 +221,14 @@ button {
   display: flex;
   flex-direction: row;
   max-width: 1200px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+
   width: 100%;
   justify-content: space-between;
+}
+
+.hotview_park .card .item {
+  margin: 10px;
 }
 
 .hotview_park .word {
@@ -409,6 +414,11 @@ button {
   margin-top: 50px;
   color: rgb(217, 217, 217);
 }
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
 
 /* 平板 768-1024 */
 
@@ -517,9 +527,10 @@ button {
   .hotview_park .card {
     justify-content: center;
     margin-bottom: 0;
+    flex-wrap: wrap;
   }
   .card .item {
-    margin: 10px;
+    margin: 0 10px;
   }
   .hotview_park .hover {
     display: block;

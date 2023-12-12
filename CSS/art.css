@@ -232,7 +232,7 @@ button {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  padding: 10px;
+  padding: 20px 10px;
   align-items: center;
   background-image: none;
   background-color: white;
@@ -508,6 +508,9 @@ button {
   }
   .card {
     justify-content: center;
+  }
+  .card .item {
+    margin: 10px;
   }
 
   .card .item .word h4 {
