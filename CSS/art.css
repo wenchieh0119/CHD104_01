@@ -141,7 +141,8 @@ button {
   margin: 10px;
   padding: 30px 10px;
   background-color: #2b3e79;
-
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border: none;
   font-family: "inter";
   text-align: center;
@@ -292,6 +293,7 @@ button {
   border-radius: 30px;
   transition: 0.6s ease-in;
   position: relative;
+  background-color: #ffffff;
 }
 .btn button:hover {
   opacity: 1;
@@ -473,7 +475,15 @@ button {
     width: 20%;
     padding: 0;
   }
-
+  .header .gnav ul li {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00c8;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
   .gnav .container {
     flex-direction: column;
     gap: 10px;

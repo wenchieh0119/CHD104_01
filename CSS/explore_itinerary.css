@@ -238,7 +238,7 @@ button {
   text-align: center;
   display: inline-block;
   color: black;
-
+  background-color: #fff;
   margin: 50px 0;
   opacity: 0.8;
   border-radius: 30px;
@@ -432,7 +432,15 @@ button {
     width: 20%;
     padding: 0;
   }
-
+  .header .gnav ul li {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00c8;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
   .gnav .container {
     flex-direction: column;
     gap: 10px;

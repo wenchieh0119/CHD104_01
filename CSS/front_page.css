@@ -59,7 +59,6 @@ button {
 .header .gnav ul li {
   list-style-type: none;
   display: flex;
-
   margin: 0 6px;
   font-size: 20px;
   font-family: "inter";
@@ -558,7 +557,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ffbe00;
 }
 .hb span {
   width: 80%;
@@ -578,9 +576,19 @@ button {
     display: block;
   }
 
-  .gnav a + a {
-    border-top: 1px solid #fff;
+  .gnav .container {
+    flex-direction: column;
+
+    gap: 10px;
   }
+
+  #menu-switch:checked ~ .header .container li {
+    transform: scaleY(1);
+  }
+
+  /* .gnav .container li {
+    border-top: #2b3e79 solid 2px;
+  } */
 }
 
 @media screen and (width < 768px) {
@@ -591,7 +599,7 @@ button {
   }
   .gnav {
     width: 100%;
-    background-color: #ffbe00;
+
     display: none;
     width: 100%;
   }
@@ -612,9 +620,15 @@ button {
     width: 20%;
     padding: 0;
   }
-  .gnav .container {
-    flex-direction: column;
-    gap: 10px;
+
+  .header .gnav ul li {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00c8;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
 
   .gnav .container li a {
