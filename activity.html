@@ -10,11 +10,13 @@
     <link rel="shortcut icon" href="./img/front/logocon.ico" type="image/x-icon">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- JS連結 -->
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./JavaScript/script.js"></script>
 </head>
 
 <body>
-    <!-- JS連結 -->
-    <script src="JavaScript/script.js"></script>
+  
 <!-- header -->
 
     <input type="checkbox" name="" id="menu-switch">
@@ -179,27 +181,7 @@
 </div>
 <a href="#" class="js-back-to-top back-to-top"  >TOP</a>
 
-<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-<script>
-  $(function() {
-    var $win = $(window);
-    var $backToTop = $('.js-back-to-top');
-    // 当用户滚动到离顶部100像素时，展示回到顶部按钮
-    $win.scroll(function() {
-      if ($win.scrollTop() > 100) {
-        $backToTop.show();
-      } else {
-        $backToTop.hide();
-      }
-    });
-    // 当用户点击按钮时，通过动画效果返回头部
-    $backToTop.click(function() {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-    });
-  });
-</script>
+
 
 
     

@@ -294,13 +294,21 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
+  background-color: #ffffff00;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.activity .frontpage .content .item :hover {
+  background-color: #0000004b;
+  border-radius: 50%;
 }
 
 .activity .frontpage .content .item img {
   border-radius: 50%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  max-width: 280px;
+  width: 100%;
 }
 
 .activity .frontpage .content .item h3 {
@@ -320,6 +328,25 @@ button {
   font-family: "inter";
   text-shadow: 1px 1px #eeeeee, 3px 3px 3px #eeeeee;
 }
+
+.activity .frontpage .content .item span {
+  font-size: 16px;
+  font-weight: bolder;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+
+  margin: 30px;
+  letter-spacing: 2px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-shadow: 1px 1px #757575, 1px 1px #757575;
+  display: none;
+}
+
 /* 留言分享 */
 .bottom {
   background-color: #224641;
@@ -561,6 +588,10 @@ button {
     width: 100%;
   }
 
+  .wrap .banner {
+    min-height: 400px;
+  }
+
   .header .navSearch input {
     max-width: 100px;
     height: 30px;
@@ -632,6 +663,10 @@ button {
 
   .activity .frontpage .content .item h3 {
     font-size: 24px;
+  }
+
+  .activity .frontpage .content .item span {
+    display: block;
   }
 
   .footer .wrap nav ul li {

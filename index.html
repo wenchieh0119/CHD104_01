@@ -11,14 +11,34 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- AOS 連結 -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+
 </head>
 
 <body>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-    <!-- JS連結 -->
-    <script src="JavaScript/script.js"></script>
+      <!-- JS連結 -->
+      <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+      <script src="./JavaScript/script.js"></script>
+      
 <!-- header -->
 
     <input type="checkbox" name="" id="menu-switch">
@@ -47,7 +67,7 @@
                     <li><a href="explore_itinerary.html">探索行程</a></li>
                     <li> <a href="activity.html">熱門活動</a></li>
                     <li><a href="trip_planning.html">行程規劃</a></li>
-                    <li><a href="#">會員中心</a></li>
+                    <li><a href="login.html">會員中心</a></li>
                 </ul>
             </nav>
 
@@ -61,9 +81,9 @@
 
         <div class="banner"> 
           
-            <div class="title">
+            <div class="title" >
 
-                <h1>探險規劃，冒險就是生活的調味劑，一同開啟無盡的旅程!</h1>
+                <h1 >探險規劃，冒險就是生活的調味劑，一同開啟無盡的旅程!</h1>
             </div>
 
            
@@ -71,104 +91,200 @@
 
         </div>
 
-        <section class="new">
-            <div class="title">
-               
-                <div class="title_h3">
-                    <div class="box"></div>
-                    <h3>旅遊情報</h3>  
-                    <div class="box"></div>
-                </div>
-              
-                <ul class="path">
-                    <li><a href="#">超夯行程</a></li>
-                    <li><a href="#">優惠訊息</a></li>
-                    <li><a href="#">精選行程</a></li>
-                    <li class="noline"><a href="#">日韓推薦</a></li>
-                </ul>
+        
+    <section class="new" id="tab-demo">
+        <div class="title">
+          <div class="title_h3">
+            <div class="box"></div>
+            <h3>旅遊情報</h3>
+            <div class="box"></div>
+          </div>
+  
+          <ul class="path">
+            <li><a href="#tab01">超夯行程</a></li>
+            <li><a href="#tab02">優惠訊息</a></li>
+            <li><a href="#tab01">精選行程</a></li>
+            <li class="noline"><a href="#tab02">日韓推薦</a></li>
+          </ul>
+        </div>
+        <div class="card" id="tab01">
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>台東‧熱氣球嘉年華</p>
             </div>
-            <div class="card">
-
-                <div class="item"data-aos="zoom-in-up">
-
-                    <div class="word">
-                        <p>台東‧熱氣球嘉年華</p>
-                    </div>
-                    <img src="./img/front/pic01.png" height="380px" width="380px" alt="">
-
-
-
-
-                </div>
-
-                <div class="item"data-aos="zoom-in-up">
-                    <div class="word">
-                        <p>澎湖‧花火節</p>
-                    </div>
-
-                    <img src="./img/front/pic02.png" height="380px" width="380px" alt="">
-
-
-
-                </div>
-
-                <div class="item"data-aos="zoom-in-up">
-
-                    <div class="word">
-                        <p>蘭嶼‧飛魚祭</p>
-                    </div>
-                    <img src="./img/front/pic03.png" height="380px" width="380px" alt="">
-
-
-
-                </div>
-
-
-
-
-                <div class="item"data-aos="zoom-in-up">
-                    <div class="word">
-                        <p>高雄‧一日遊</p>
-                    </div>
-
-
-                    <img src="./img/front/pic1-1.png" height="280px" width="280px" alt="">
-
-
-                </div>
-
-                <div class="item"data-aos="zoom-in-up">
-                    <div class="word">
-                        <p>法國‧必玩行程</p>
-                    </div>
-                    <img src="./img/front/pic1-2.png" height="280px" width="280px" alt="">
-
-
-                </div>
-
-                <div class="item"data-aos="zoom-in-up">
-
-                    <div class="word">
-                        <p>韓國‧必去景點</p>
-                    </div>
-
-                    <img src="./img/front/pic1-3.png" height="280px" width="280px" alt="">
-
-
-                </div>
-
-                <div class="item"data-aos="zoom-in-up">
-                    <div class="word">
-                        <p>日本‧櫻花祭</p>
-                    </div>
-                    <img src="./img/front/pic1-4.png" height="280px" width="280px" alt="">
-
-
-                </div>
+            <img
+              src="./img/front/pic01.png"
+              height="380px"
+              width="380px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>澎湖‧花火節</p>
             </div>
-
-        </section>
-
+  
+            <img
+              src="./img/front/pic02.png"
+              height="380px"
+              width="380px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>蘭嶼‧飛魚祭</p>
+            </div>
+            <img
+              src="./img/front/pic03.png"
+              height="380px"
+              width="380px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>高雄‧一日遊</p>
+            </div>
+  
+            <img
+              src="./img/front/pic1-1.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>法國‧必玩行程</p>
+            </div>
+            <img
+              src="./img/front/pic1-2.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>韓國‧必去景點</p>
+            </div>
+  
+            <img
+              src="./img/front/pic1-3.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>日本‧櫻花祭</p>
+            </div>
+            <img
+              src="./img/front/pic1-4.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+        </div>
+  
+        <div class="card" id="tab02">
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>高雄‧一日遊</p>
+            </div>
+  
+            <img
+              src="./img/front/pic1-1.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>法國‧必玩行程</p>
+            </div>
+            <img
+              src="./img/front/pic1-2.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>韓國‧必去景點</p>
+            </div>
+  
+            <img
+              src="./img/front/pic1-3.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>日本‧櫻花祭</p>
+            </div>
+            <img
+              src="./img/front/pic1-4.png"
+              height="280px"
+              width="280px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>台東‧熱氣球嘉年華</p>
+            </div>
+            <img
+              src="./img/front/pic01.png"
+              height="380px"
+              width="380px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>澎湖‧花火節</p>
+            </div>
+  
+            <img
+              src="./img/front/pic02.png"
+              height="380px"
+              width="380px"
+              alt=""
+            />
+          </div>
+  
+          <div class="item" data-aos="zoom-in-up">
+            <div class="word">
+              <p>蘭嶼‧飛魚祭</p>
+            </div>
+            <img
+              src="./img/front/pic03.png"
+              height="380px"
+              width="380px"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
 
 
@@ -307,9 +423,11 @@
                     <div class="item"data-aos="zoom-in">
                         <a href="activity.html">
                             <h3>美食品嘗</h3>
+                            <span>CLICK ME</span>
+                          
                         </a>
 
-                        <img src="./img/front/pic4-1.png" alt="美食品嘗" height="250px" width="250px">
+                        <img src="./img/front/pic4-1.png" alt="美食品嘗" >
                     </div>
 
 
@@ -317,18 +435,22 @@
                     <div class="item"data-aos="zoom-in">
                         <a href="park.html">
                             <h3>主題樂園</h3>
+                            <span>CLICK ME</span>
+                          
                         </a>
 
-                        <img src="./img/front/pic4-2.png" alt="美食品嘗" height="250px" width="250px">
+                        <img src="./img/front/pic4-2.png" alt="美食品嘗" >
 
                     </div>
 
                     <div class="item"data-aos="zoom-in">
                         <a href="attractions.html">
                             <h3>景點探索</h3>
+                            <span>CLICK ME</span>
+                          
                         </a>
 
-                        <img src="./img/front/pic4-3.png" alt="美食品嘗" height="250px" width="250px">
+                        <img src="./img/front/pic4-3.png" alt="美食品嘗" >
 
                     </div>
 
@@ -338,9 +460,11 @@
                     <div class="item"data-aos="zoom-in">
                         <a href="art.html">
                             <h3>文藝主題</h3>
+                            <span>CLICK ME</span>
+                          
                         </a>
 
-                        <img src="./img/front/pic4-4.png" alt="美食品嘗" height="250px" width="250px">
+                        <img src="./img/front/pic4-4.png" alt="美食品嘗" >
 
                     </div>
 
@@ -517,27 +641,7 @@
 
 <a href="#" class="js-back-to-top back-to-top"  >TOP</a>
 
-<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
-<script>
-  $(function() {
-    var $win = $(window);
-    var $backToTop = $('.js-back-to-top');
-    // 当用户滚动到离顶部100像素时，展示回到顶部按钮
-    $win.scroll(function() {
-      if ($win.scrollTop() > 100) {
-        $backToTop.show();
-      } else {
-        $backToTop.hide();
-      }
-    });
-    // 当用户点击按钮时，通过动画效果返回头部
-    $backToTop.click(function() {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-    });
-  });
-</script>
+
 
 
 
@@ -577,12 +681,6 @@
 
 
     </footer>
-  <!-- AOS 連結 -->
-  <script>
-    AOS.init({
-        duration:3000,
-    });
-  </script>
 
 
 </body>
