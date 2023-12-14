@@ -691,6 +691,10 @@ button {
     display: block;
   }
 
+  .activity .frontpage .content .item :hover {
+    display: none;
+  }
+
   .footer .wrap nav ul li {
     padding: 0 2px;
   }
