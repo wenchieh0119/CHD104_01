@@ -2,185 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/login.css">
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/login.css">
+  <title>Document</title>
 
-        .wrap {
-            margin: 0 auto;
-            width: 500px;
-        }
+  <style>
 
-        h2 {
-            text-align: center;
-            color: #25a6af;
-        }
 
-        .email,
-        .password {
-            width: 500px;
-            height: 40px;
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #333;
-        }
-
-        label {
-            padding-right: 10px;
-        }
-
-        input {
-            margin-top: 10px;
-        }
-
-        input:focus {
-            outline: none;
-            /* 取消focus效果 */
-        }
-
-        #btn {
-            text-align: center;
-        }
-
-        #btn input {
-            width: 45%;
-            margin: 2%;
-            margin-top: 10px;
-            border: none;
-            height: auto;
-            padding: 5px;
-            font-size: 16px;
-            border-radius: 100px;
-        }
-
-        .signUp,
-        .logIn {
-            cursor: pointer;
-        }
-
-        .signUp {
-            background-color: #06a81c;
-            color: #fff;
-        }
-
-        .signUp:hover {
-            background-color: #047714;
-            color: #fff;
-        }
-
-        .logIn {
-            background-color: #ffce49;
-            color: #816516;
-        }
-
-        .logIn:hover {
-            background-color: #ffc31f;
-            color: #816516;
-        }
-
-        /* .true {
-  color: #06a81c;
-}
-
-.false {
-  color: red;
-} */
-    </style>
+  </style>
 </head>
 
 <body>
-    <html>
-        <body>
-        
-          
-          <div class="login_page">
-            <div id="container1">
-      
-              <div class="login">  
-                
-                <h3>登入 Login</h3>
-      
-                <form action="用戶管理.php">
-                  <input type="text" id="username" name="username" placeholder="帳號" required>
-                  <div class="tab"></div>
-                  <input type="text" id="password" name="password" placeholder="密碼" required>
-                  <div class="tab"></div>
-                  <input type="submit" value="登入" class="submit" onclick="location.href='./index.html'">
-                </form>  
-      
-                <h5 onclick="show_hide()">註冊帳號</h5>
-                
-              </div><!-- login end-->
-            </div><!-- container1 end-->
-          </div><!-- login_page end-->
-          
-          <div class="signup_page"
-            <div id="container2">
-      
-              <div class="signup">  
-                
-                <h3>註冊 Sign Up</h3>
-      
-                <form action="用戶管理.php">
-                  <input type="text" id="fullname" name="fullname" placeholder="姓名" required>
-                  <div class="tab"></div>
-                  <input type="text" id="username2" name="username" placeholder="帳號" required>
-                  <div class="tab"></div>
-                  <input type="text" id="password2" name="password" placeholder="密碼" required>
-                  <div class="tab"></div>
-                  <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
-                  <div class="tab"></div>            
-                  <input type="submit" value="註冊" class="submit">
-                </form>  
-      
-                <h5 onclick="show_hide()">登入帳號</h5>
-                
-              </div><!-- signup end-->
-            </div><!-- container2 end-->
-          </div><!-- signup_page end--> 
-      
-             
+  <html>
+
+  <body>
+
+
+    <!-- header -->
+
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="header">
+
+      <div class="container">
+        <div class="header-logo">
+          <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="50px" width="110px" alt="網站名稱"></a>
+        </div>
+
+        <div class="navSearch">
+          <input type="search" placeholder="想去哪裡呢?...." />
+          <button><img src="./img/front/search.png" alt="" height="20px" width="20px"></i></button>
+        </div>
+
+        <label for="menu-switch" class="hb">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="gnav">
+          <ul class="container">
+            <li><a href="news.html">旅遊情報</a></li>
+            <li><a href="explore_itinerary.html">探索行程</a></li>
+            <li> <a href="activity.html">熱門活動</a></li>
+            <li><a href="trip_planning.html">行程規劃</a></li>
+            <li><a href="login.html">會員中心</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <div class="login-wrap">
+      <div class="banner"></div>
+
+      <div class="login_page">
+        <div id="container1">
+
+          <div class="login">
+
+            <h3>登入</h3>
+
+            <form>
+              <input type="text" id="username" name="username" placeholder="帳號" required>
+              <div class="tab"></div>
+              <input type="text" id="password" name="password" placeholder="密碼" required>
+              <div class="tab"></div>
+              <input type="submit" value="登入" class="submit" onclick="location.href='./index.html'">
+            </form>
+
+            <h5 onclick="show_hide()">註冊帳號</h5>
+
+          </div><!-- login end-->
+        </div><!-- container1 end-->
+      </div><!-- login_page end-->
+
+      <div class="signup_page" <div id="container2">
+
+        <div class="signup">
+
+          <h3>註冊 </h3>
+
+          <form>
+            <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
+            <div class="tab"></div>
+            <input type="text" id="username2" name="username" placeholder="帳號" required>
+            <div class="tab"></div>
+            <input type="text" id="password2" name="password" placeholder="密碼" required>
+            <div class="tab"></div>
+            <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+            <div class="tab"></div>
+            <input type="submit" value="註冊" class="submit">
+          </form>
+
+          <h5 onclick="show_hide()">登入帳號</h5>
+
+        </div><!-- signup end-->
+      </div><!-- container2 end-->
+    </div><!-- signup_page end-->
+
+
+    </div>
 
 
 
 
 
 
-<script>function show_hide() {
-    var login = document.getElementById("container1");
-    var signup = document.getElementById("container2");
-    var copyright = document.getElementById("copyright");
-  
-    if (login.style.display === "none") {
-        login.style.display = "block";  //lonin出現
-        document.getElementById("username").value="";
-        document.getElementById("password").value="";
-        signup.style.display = "none";  //signup消失
-        copyright.style.margin = "200px 0px 0px 0px";
-    } else {
-        login.style.display = "none";   //login消失
-        signup.style.display = "block"; //signup出現
-        signup.style.visibility="visible";
-        copyright.style.margin = "200px 0px 0px 0px";
-     
-        document.getElementById("fullname").value="";
-        document.getElementById("username2").value="";
-        document.getElementById("password2").value="";
-        document.getElementById("comfirm_password").value="";
-    }
-}</script>
+    <script>function show_hide() {
+        var login = document.getElementById("container1");
+        var signup = document.getElementById("container2");
+
+
+        if (login.style.display === "none") {
+          login.style.display = "block";  //lonin出現
+          document.getElementById("username").value = "";
+          document.getElementById("password").value = "";
+          signup.style.display = "none";  //signup消失
+          copyright.style.margin = "200px 0px 0px 0px";
+        } else {
+          login.style.display = "none";   //login消失
+          signup.style.display = "block"; //signup出現
+          signup.style.visibility = "visible";
+          copyright.style.margin = "200px 0px 0px 0px";
+
+          document.getElementById("fullname").value = "";
+          document.getElementById("username2").value = "";
+          document.getElementById("password2").value = "";
+          document.getElementById("comfirm_password").value = "";
+        }
+      }</script>
+
+
+    <!-- 頁尾 -->
+
+    <footer class="footer">
+      <div class="wrap">
+        <a href="index.html" class="logo"> <img src="./img/front/LOGO.png" height="78px" width="171px" alt="網站名稱"></a>
+
+        <div class="middle">
+
+          <nav>
+            <ul>
+              <li><a href="news.html">旅遊情報</a></li>
+              <li><a href="explore_itinerary.html">探索行程</a></li>
+              <li><a href="activity.html">熱門活動</a></li>
+              <li><a href="trip_planning.html">行程規劃</a></li>
+              <li><a href="login.html">會員中心</a></li>
+              <li></li>
+            </ul>
+
+          </nav>
+          <div class="footer-bottom">本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。</div>
+        </div>
+        <div class="icon">
+          <!-- <a href="#"> <img src="./img/front/ig.png" height="30px" width="30px" alt="instragm"></a>
+          <a href="#"> <img src="./img/front/twit.png" height="30px" width="30px" alt="twitter"></a>
+          <a href="#"> <img src="./img/front/fb.png" height="30px" width="30px" alt="facebook"></a> -->
+
+        </div>
+      </div>
 
 
 
-        </body>
-      </html>
-</body>
+    </footer>
+
+  </body>
+
+
 
 </html>

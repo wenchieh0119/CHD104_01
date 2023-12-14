@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="front_page.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="./CSS/reset.css">
+
+
+
+
+    <style>
+        /* 註冊底線維持 */
+        .login a:first-child{
+            padding-bottom: 10px;
+            /* 深靛藍 */
+            border-bottom: 1.5px solid #042D41;
+        }
+        
+        
+        
+        /* 登入底線消失 */
+        .login a:last-child{
+            padding-bottom: 10px;
+            /* 深靛藍 */
+            border-bottom: 0px solid #042D41;
+        }
+        
+        </style>
 </head>
 
 <body>
@@ -34,6 +56,59 @@
                     <li><a href="member_center.html">會員中心</a></li>
                 </ul>
             </nav>
+
+
+
+        </div>
+
+
+
+
+           <!-- ------------------------------會員專區-------------------------------->
+     <div class="member_All">
+
+        <div class="member_main">
+            
+            <div class="member_login">
+
+                <ul class="login">
+                    <a href="./register.html">註冊</a>
+                    <a href="./member.html">登入</a>
+                </ul>
+                
+
+                <ul>
+                    
+                    <!------------------ 會員註冊 ------------------>
+                    <!-- 註冊帳號 -->
+                    <li>
+                        <input class="phone" type="text" placeholder="帳號(須為6~24位英文或數字)" />
+                    </li>
+                    <!-- 註冊信箱 -->
+                    <li>
+                        <input class="address" type="text" placeholder="請輸入電子信箱" />
+                    </li>
+                    <!-- 註冊信箱 -->
+                    <li>
+                        <input class="address" type="text" placeholder="密碼(須為6~32位英文或數字)" />
+                    </li>
+    
+                    <!-- 送出 -->
+                    <li>
+                        
+                        <span>註冊後，即表示已閱讀且同意<br>
+                            <a href="#">使用條款</a> 和<a href="#">隱私政策</a>
+                        </span>
+                        <input class="send" type="submit" value="註冊會員" />
+                    </li> 
+                </ul>
+
+                <!-- <ul class="social_log">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="#">Facebook</a>
+                    <a href="#">Google</a>
+                </ul> -->
+            </div>
         </div>
 
 
