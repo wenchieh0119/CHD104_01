@@ -240,7 +240,7 @@ button {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
-
+  background-color: white;
   border: rgb(181, 181, 181) solid 1px;
 }
 
