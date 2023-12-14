@@ -133,6 +133,7 @@ button {
   align-items: center;
   padding: 20px 0;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .top_btn ul li {
@@ -141,8 +142,7 @@ button {
   margin: 10px;
   padding: 30px 10px;
   background-color: #2b3e79;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
   border: none;
   font-family: "inter";
   text-align: center;
@@ -154,6 +154,8 @@ button {
   cursor: pointer;
 
   padding-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .top_btn ul li a p {
   color: #ffffff;
@@ -495,29 +497,21 @@ button {
   }
 
   .top_btn ul {
-    margin: 10px;
-    padding: 5px;
+    justify-content: space-around;
+    margin: auto;
+    padding: auto;
   }
-
   .top_btn ul li {
-    flex-direction: column;
-    padding: 5px;
-    margin: 0 5px;
+    padding: 20px 10px;
   }
+  .top_btn ul li span {
+    font-size: 20px;
 
-  .top_btn ul li a {
-    line-height: 1.8;
+    padding: 6px 8px;
   }
 
   .top_btn ul li a p {
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-
-  .top_btn ul li span {
     font-size: 16px;
-    padding: 6px 8px;
   }
   .banner .title h2 {
     letter-spacing: 1px;

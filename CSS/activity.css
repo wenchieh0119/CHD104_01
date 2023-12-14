@@ -132,6 +132,7 @@ button {
   align-items: center;
   padding: 20px 0;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .top_btn ul li {
@@ -501,31 +502,22 @@ button {
     padding: 20px 0;
   }
   .top_btn ul {
-    margin: 10px;
-    padding: 5px;
+    justify-content: space-around;
+    margin: auto;
+    padding: auto;
   }
-
   .top_btn ul li {
-    flex-direction: column;
-    padding: 5px;
-    margin: 0 5px;
+    padding: 20px 10px;
   }
-
-  .top_btn ul li a {
-    line-height: 1.8;
-  }
-
-  .top_btn ul li a p {
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-
   .top_btn ul li span {
-    font-size: 16px;
+    font-size: 20px;
+
     padding: 6px 8px;
   }
 
+  .top_btn ul li a p {
+    font-size: 16px;
+  }
   .footer .wrap nav ul li {
     padding: 0 2px;
   }
