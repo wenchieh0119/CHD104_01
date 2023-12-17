@@ -155,8 +155,7 @@ button {
 .title .path {
   display: flex;
   flex-direction: row;
-  letter-spacing: 8%;
-
+  letter-spacing: 1px;
   color: black;
   margin-bottom: 20px;
   text-align: center;
@@ -166,7 +165,7 @@ button {
   font-size: 24px;
   font-weight: 600;
   width: 5px;
-  letter-spacing: 1.5px;
+
   color: #000000;
   border-right: #000000 solid 2px;
   padding: 0 5px;
@@ -645,6 +644,7 @@ button {
     height: 280px;
     width: 280px;
   }
+
   .new .title .path li {
     line-height: 0;
   }
@@ -655,13 +655,14 @@ button {
 
   .new .path li a {
     font-size: 16px;
-    padding: 0 2px;
-    letter-spacing: 1;
   }
 
   .news .path li a {
     font-size: 16px;
-    letter-spacing: 1;
+  }
+  .title .path li a {
+    padding: 0 px;
+    letter-spacing: normal;
   }
 
   .new .card .item p {
@@ -682,6 +683,7 @@ button {
     justify-content: center;
     align-items: center;
   }
+
   .activity .frontpage .content .item {
     margin: 10px;
   }
@@ -695,7 +697,7 @@ button {
   }
 
   .activity .frontpage .content .item :hover {
-    display: none;
+    background-color: #00000000;
   }
 
   .footer .wrap nav ul li {
