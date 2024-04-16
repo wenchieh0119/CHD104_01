@@ -252,6 +252,7 @@ button {
 .plan .date {
   font-family: "inter";
   display: flex;
+  justify-content: center;
   width: 380px;
   margin-bottom: 30px;
 }
@@ -431,7 +432,7 @@ button {
 
   color: white;
   margin: 20px 45%;
-
+  cursor: pointer;
   background-color: #ffbe00;
   display: flex;
   justify-content: center;
@@ -471,7 +472,7 @@ button {
   background-color: #ffbf00;
   border: white 1px solid;
   border-radius: 50px;
-
+  cursor: pointer; 
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-family: "inter";

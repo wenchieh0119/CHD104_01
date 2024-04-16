@@ -332,7 +332,7 @@ button {
   justify-content: center;
   letter-spacing: 6px;
   font-family: "inter";
-  text-shadow: 1px 1px #eeeeee, 3px 3px 3px #eeeeee;
+  text-shadow: 1px 1px #eeeeee;
 }
 
 .activity .frontpage .content .item span {
