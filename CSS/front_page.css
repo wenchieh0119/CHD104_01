@@ -458,7 +458,6 @@ button {
   /* 設置文本顏色 */
 
   cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-
   padding: 15px; /* 增加一些內邊距 */
   font-family: "Saira Extra Condensed", sans-serif;
 
