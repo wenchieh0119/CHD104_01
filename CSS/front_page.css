@@ -675,11 +675,11 @@ button {
     font-size: 16px;
   }
   .news .card {
-    data-aos: block;
+  
   }
 
   .new .card {
-    data-aos: block;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
